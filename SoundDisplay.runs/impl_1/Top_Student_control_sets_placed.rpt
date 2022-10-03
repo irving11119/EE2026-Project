@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
-| Date         : Mon Oct  3 21:17:15 2022
+| Date         : Mon Oct  3 21:49:35 2022
 | Host         : DESKTOP-JI6E2KE running 64-bit major release  (build 9200)
 | Command      : report_control_sets -verbose -file Top_Student_control_sets_placed.rpt
 | Design       : Top_Student
@@ -46,12 +46,12 @@ Table of Contents
 +--------------+-----------------------+------------------------+-----------------+--------------+
 | Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
 +--------------+-----------------------+------------------------+-----------------+--------------+
-| No           | No                    | No                     |              94 |           19 |
+| No           | No                    | No                     |              94 |           17 |
 | No           | No                    | Yes                    |               0 |            0 |
 | No           | Yes                   | No                     |             340 |           49 |
 | Yes          | No                    | No                     |               0 |            0 |
 | Yes          | No                    | Yes                    |               0 |            0 |
-| Yes          | Yes                   | No                     |             104 |           12 |
+| Yes          | Yes                   | No                     |             104 |           14 |
 +--------------+-----------------------+------------------------+-----------------+--------------+
 
 
@@ -63,17 +63,17 @@ Table of Contents
 +---------------------------+---------------------+-----------------------------+------------------+----------------+
 | ~clk6p25m_BUFG            |                     |                             |                1 |              2 |
 |  CLK100MHZ_IBUF_BUFG      |                     |                             |                4 |              8 |
+| ~ac/J_MIC3_Pin4_OBUF      |                     |                             |                3 |             24 |
+|  clk_20k/J_MIC3_Pin1_OBUF |                     |                             |                4 |             24 |
 |  CLK100MHZ_IBUF_BUFG      |                     | clk_20k/J_MIC3_Pin1_OBUF    |                3 |             24 |
-| ~ac/J_MIC3_Pin4_OBUF      |                     |                             |                4 |             24 |
-|  clk_20k/J_MIC3_Pin1_OBUF |                     |                             |                2 |             24 |
-| ~clk6p25m_BUFG            |                     | btnC_IBUF                   |                7 |             34 |
-|  clk_10/CLK               |                     |                             |                8 |             36 |
+| ~clk6p25m_BUFG            |                     | btnC_IBUF                   |                8 |             34 |
+|  clk_10/CLK               |                     |                             |                5 |             36 |
 | ~clk6p25m_BUFG            | od/delay[0]_i_1_n_0 | btnC_IBUF                   |                5 |             40 |
-| ~clk6p25m_BUFG            | od/state            | btnC_IBUF                   |                7 |             64 |
 |  CLK100MHZ_IBUF_BUFG      |                     | clk_10/my_seq[0]_i_1__1_n_0 |                8 |             64 |
 |  CLK100MHZ_IBUF_BUFG      |                     | clk_20k/clear               |                8 |             64 |
 |  CLK100MHZ_IBUF_BUFG      |                     | clk_6p25/my_seq[0]_i_1_n_0  |                8 |             64 |
-| ~clk6p25m_BUFG            |                     | od/spi_word[39]_i_1_n_0     |               15 |             90 |
+| ~clk6p25m_BUFG            | od/state            | btnC_IBUF                   |                9 |             64 |
+| ~clk6p25m_BUFG            |                     | od/spi_word[39]_i_1_n_0     |               14 |             90 |
 +---------------------------+---------------------+-----------------------------+------------------+----------------+
 
 

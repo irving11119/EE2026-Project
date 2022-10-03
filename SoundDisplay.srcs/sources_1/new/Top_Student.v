@@ -37,9 +37,9 @@ module Top_Student (
     wire [12:0] my_pixel_index;
     wire my_chosen_clk;
     
-    clk_divider clk_20k(.CLK(CLK100MHZ),.m(2500),.CLK_OUT(clk_20khz));
-    clk_divider clk_10(.CLK(CLK100MHZ),.m(5000000),.CLK_OUT(clk_10hz));
-    clk_divider clk_6p25(.CLK(CLK100MHZ),.m(8),.CLK_OUT(clk6p25m));
+    clk_divider clk_20k(.CLK(CLK100MHZ),.m(2499),.CLK_OUT(clk_20khz));
+    clk_divider clk_10(.CLK(CLK100MHZ),.m(4999999),.CLK_OUT(clk_10hz));
+    clk_divider clk_6p25(.CLK(CLK100MHZ),.m(7),.CLK_OUT(clk6p25m));
     
     Oled_Display od(.clk(clk6p25m),.reset(btnC),
     .frame_begin(my_frame_begin), .sending_pixels(my_sendpix),
