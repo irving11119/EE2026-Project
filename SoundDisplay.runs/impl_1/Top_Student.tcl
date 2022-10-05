@@ -69,12 +69,12 @@ set rc [catch {
   create_project -in_memory -part xc7a35tcpg236-1
   set_property design_mode GateLvl [current_fileset]
   set_param project.singleFileAddWarning.threshold 0
-  set_property webtalk.parent_dir C:/Users/firwe/Desktop/Y2S1/EE2026/SoundDisplay/SoundDisplay.cache/wt [current_project]
-  set_property parent.project_path C:/Users/firwe/Desktop/Y2S1/EE2026/SoundDisplay/SoundDisplay.xpr [current_project]
-  set_property ip_output_repo C:/Users/firwe/Desktop/Y2S1/EE2026/SoundDisplay/SoundDisplay.cache/ip [current_project]
+  set_property webtalk.parent_dir C:/Users/irvin/EE2026/EE2026-Project/SoundDisplay.cache/wt [current_project]
+  set_property parent.project_path C:/Users/irvin/EE2026/EE2026-Project/SoundDisplay.xpr [current_project]
+  set_property ip_output_repo C:/Users/irvin/EE2026/EE2026-Project/SoundDisplay.cache/ip [current_project]
   set_property ip_cache_permissions {read write} [current_project]
-  add_files -quiet C:/Users/firwe/Desktop/Y2S1/EE2026/SoundDisplay/SoundDisplay.runs/synth_1/Top_Student.dcp
-  read_xdc C:/Users/firwe/Desktop/Y2S1/EE2026/SoundDisplay/SoundDisplay.srcs/constrs_1/new/Basys3_Master.xdc
+  add_files -quiet C:/Users/irvin/EE2026/EE2026-Project/SoundDisplay.runs/synth_1/Top_Student.dcp
+  read_xdc C:/Users/irvin/EE2026/EE2026-Project/SoundDisplay.srcs/constrs_1/new/Basys3_Master.xdc
   link_design -top Top_Student -part xc7a35tcpg236-1
   close_msg_db -file init_design.pb
 } RESULT]
