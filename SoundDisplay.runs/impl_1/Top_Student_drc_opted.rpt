@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
-| Date         : Mon Oct  3 21:49:31 2022
+| Date         : Fri Oct  7 16:38:58 2022
 | Host         : DESKTOP-JI6E2KE running 64-bit major release  (build 9200)
 | Command      : report_drc -file Top_Student_drc_opted.rpt -pb Top_Student_drc_opted.pb -rpx Top_Student_drc_opted.rpx
 | Design       : Top_Student
@@ -49,7 +49,7 @@ Related violations: <none>
 
 PLHOLDVIO-2#1 Warning
 Non-Optimal connections which could lead to hold violations  
-A LUT clk_10/oled_data[15]_i_1 is driving clock pin of 18 cells. This could lead to large hold time violations. First few involved cells are:
+A LUT clk_10/led[11]_i_1 is driving clock pin of 12 cells. This could lead to large hold time violations. First few involved cells are:
     led_reg[0] {FDRE}
     led_reg[10] {FDRE}
     led_reg[11] {FDRE}

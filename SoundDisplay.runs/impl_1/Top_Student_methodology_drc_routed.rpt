@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
-| Date         : Mon Oct  3 21:50:01 2022
+| Date         : Fri Oct  7 16:39:29 2022
 | Host         : DESKTOP-JI6E2KE running 64-bit major release  (build 9200)
 | Command      : report_methodology -file Top_Student_methodology_drc_routed.rpt -pb Top_Student_methodology_drc_routed.pb -rpx Top_Student_methodology_drc_routed.rpx
 | Design       : Top_Student
@@ -23,11 +23,11 @@ Table of Contents
           Floorplan: design_1
       Design limits: <entire design considered>
              Max violations: <unlimited>
-             Violations found: 160
+             Violations found: 154
 +-----------+----------+-------------------------------+------------+
 | Rule      | Severity | Description                   | Violations |
 +-----------+----------+-------------------------------+------------+
-| TIMING-17 | Warning  | Non-clocked sequential cell   | 157        |
+| TIMING-17 | Warning  | Non-clocked sequential cell   | 151        |
 | TIMING-18 | Warning  | Missing input or output delay | 3          |
 +-----------+----------+-------------------------------+------------+
 
@@ -786,36 +786,6 @@ Related violations: <none>
 TIMING-17#151 Warning
 Non-clocked sequential cell  
 The clock pin od/spi_word_reg[9]/C is not reached by a timing clock
-Related violations: <none>
-
-TIMING-17#152 Warning
-Non-clocked sequential cell  
-The clock pin oled_data_reg[10]/C is not reached by a timing clock
-Related violations: <none>
-
-TIMING-17#153 Warning
-Non-clocked sequential cell  
-The clock pin oled_data_reg[11]/C is not reached by a timing clock
-Related violations: <none>
-
-TIMING-17#154 Warning
-Non-clocked sequential cell  
-The clock pin oled_data_reg[12]/C is not reached by a timing clock
-Related violations: <none>
-
-TIMING-17#155 Warning
-Non-clocked sequential cell  
-The clock pin oled_data_reg[13]/C is not reached by a timing clock
-Related violations: <none>
-
-TIMING-17#156 Warning
-Non-clocked sequential cell  
-The clock pin oled_data_reg[14]/C is not reached by a timing clock
-Related violations: <none>
-
-TIMING-17#157 Warning
-Non-clocked sequential cell  
-The clock pin oled_data_reg[15]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-18#1 Warning
