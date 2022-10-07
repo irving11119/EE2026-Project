@@ -69,7 +69,7 @@ module Top_Student (
     end
 
     always @ (posedge CLK100MHZ) begin
-        if (((x == 2 || x == 93) && (y >= 2 && y <= 60)) || ((y == 2 || y == 60) && (x > 2 && x < 93 )))
+        if (((x == 2 || x == 93) && (y >= 2 && y <= 60)) || ((y == 2 || y == 60) && (x >= 2 && x <= 93 )))
         begin
             oled_data <= {5'b11111, 6'd0, 5'd0};
         end
@@ -77,6 +77,26 @@ module Top_Student (
         else if (((x >=4 && x<=6 || x>=89 && x<=91) && (y >=4 && y <=58)) || ((y >= 4 && y <=6 || y <= 58 && y >= 56)) && (x >= 4 && x <= 91))
         begin
             oled_data <= 16'hFFA500; 
+        end
+        
+        else if (((x == 8 || x == 87) && (y >= 8 && y <= 56)) || ((y == 8 || y == 56) && (x >= 8 && x <= 87 )))
+        begin
+            oled_data <= {5'd0, 6'b111111, 5'd0};
+        end
+        
+        else if (((x == 10 || x == 85) && (y >= 10 && y <= 54)) || ((y == 10 || y == 54) && (x >= 10 && x <= 85 )))
+        begin
+            oled_data <= {5'd0, 6'b111111, 5'd0};
+        end
+
+        else if (((x == 12 || x == 83) && (y >= 12 && y <= 52)) || ((y == 12 || y == 52) && (x >= 12 && x <= 83 )))
+        begin
+            oled_data <= {5'd0, 6'b111111, 5'd0};
+        end
+
+        else if (((x == 14 || x == 81) && (y >= 14 && y <= 50)) || ((y == 14 || y == 50) && (x >= 14 && x <= 81 )))
+        begin
+            oled_data <= {5'd0, 6'b111111, 5'd0};
         end
     
         else 
