@@ -18,18 +18,19 @@
 
 module Top_Student (
     input CLK100MHZ,
+    input btnD,
     input [15:0] sw,
     input btnC,
     input  J_MIC3_Pin3,   // Connect from this signal to Audio_Capture.v
     output J_MIC3_Pin1,   // Connect to this signal from Audio_Capture.v
     output J_MIC3_Pin4,  // Connect to this signal from Audio_Capture.v
-    output reg [11:0] led,
+    output [13:0] led,
     output rgb_cs, rgb_stdin, rgb_sclk, rgb_d_cn, rgb_resn, rgb_vccen, rgb_pmoden
     // Delete this comment and include other inputs and outputs here
     );
     wire [11:0] mic_in;
-    reg [15:0] oled_data = 16'h07E0;
-    
+    wire [15:0] oled_data;
+
     wire clk_20khz;
     wire clk_10hz;
     wire clk6p25m;
@@ -54,6 +55,7 @@ module Top_Student (
         .sclk(J_MIC3_Pin4),           
         .sample(mic_in)
         );
+<<<<<<< HEAD
 
     assign my_chosen_clk = sw[0] ? clk_10hz : clk_20khz;
     
@@ -69,6 +71,22 @@ module Top_Student (
     always @ (posedge CLK100MHZ) begin
         oled_data <= {mic_in[11:7], 6'd0, mic_in[11:7]};
     end
+=======
+    OLED_TB tb(
+        .my_pixel_index(my_pixel_index), 
+        .pbd(btnD),
+        .clk(CLK100MHZ),
+        .oled_data(oled_data)
+    );
+    always @ (posedge CLK100MHZ) begin
+        my_chosen_clk <= sw[0] ? clk_10hz : clk_20khz;
+    end
+    
+//    always @ (posedge my_chosen_clk) begin
+//        led <= mic_in;
+//    end
+    
+>>>>>>> OTB
     // Delete this comment and write your codes and instantiations here
 
 endmodule

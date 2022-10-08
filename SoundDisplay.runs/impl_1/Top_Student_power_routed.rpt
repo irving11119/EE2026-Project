@@ -1,8 +1,13 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
+<<<<<<< HEAD
 | Date             : Mon Oct  3 21:50:01 2022
 | Host             : DESKTOP-JI6E2KE running 64-bit major release  (build 9200)
+=======
+| Date             : Sat Oct  8 17:25:21 2022
+| Host             : WP-HP-OMEN running 64-bit major release  (build 9200)
+>>>>>>> OTB
 | Command          : report_power -file Top_Student_power_routed.rpt -pb Top_Student_power_summary_routed.pb -rpx Top_Student_power_routed.rpx
 | Design           : Top_Student
 | Device           : xc7a35tcpg236-1
@@ -30,10 +35,10 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 0.076        |
+| Total On-Chip Power (W)  | 0.079        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 0.004        |
+| Dynamic (W)              | 0.007        |
 | Device Static (W)        | 0.072        |
 | Effective TJA (C/W)      | 5.0          |
 | Max Ambient (C)          | 84.6         |
@@ -53,6 +58,7 @@ Table of Contents
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
 | Clocks         |     0.002 |        3 |       --- |             --- |
+<<<<<<< HEAD
 | Slice Logic    |    <0.001 |      548 |       --- |             --- |
 |   LUT as Logic |    <0.001 |      208 |     20800 |            1.00 |
 |   CARRY4       |    <0.001 |       36 |      8150 |            0.44 |
@@ -61,8 +67,19 @@ Table of Contents
 |   BUFG         |     0.000 |        1 |        32 |            3.13 |
 | Signals        |    <0.001 |      457 |       --- |             --- |
 | I/O            |    <0.001 |       25 |       106 |           23.58 |
+=======
+| Slice Logic    |    <0.001 |      703 |       --- |             --- |
+|   LUT as Logic |    <0.001 |      317 |     20800 |            1.52 |
+|   CARRY4       |    <0.001 |       52 |      8150 |            0.64 |
+|   Register     |    <0.001 |      239 |     41600 |            0.57 |
+|   F7/F8 Muxes  |    <0.001 |        2 |     32600 |           <0.01 |
+|   Others       |     0.000 |       19 |       --- |             --- |
+|   BUFG         |     0.000 |        1 |        32 |            3.13 |
+| Signals        |    <0.001 |      525 |       --- |             --- |
+| I/O            |     0.004 |       25 |       106 |           23.58 |
+>>>>>>> OTB
 | Static Power   |     0.072 |          |           |                 |
-| Total          |     0.076 |          |           |                 |
+| Total          |     0.079 |          |           |                 |
 +----------------+-----------+----------+-----------+-----------------+
 
 
@@ -74,7 +91,7 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Vccint    |       1.000 |     0.013 |       0.003 |      0.010 |
 | Vccaux    |       1.800 |     0.013 |       0.000 |      0.013 |
-| Vcco33    |       3.300 |     0.001 |       0.000 |      0.001 |
+| Vcco33    |       3.300 |     0.002 |       0.001 |      0.001 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
 | Vcco18    |       1.800 |     0.000 |       0.000 |      0.000 |
 | Vcco15    |       1.500 |     0.000 |       0.000 |      0.000 |
@@ -138,15 +155,19 @@ Table of Contents
 3.1 By Hierarchy
 ----------------
 
-+-------------+-----------+
-| Name        | Power (W) |
-+-------------+-----------+
-| Top_Student |     0.004 |
-|   ac        |    <0.001 |
-|   clk_10    |    <0.001 |
-|   clk_20k   |    <0.001 |
-|   clk_6p25  |    <0.001 |
-|   od        |    <0.001 |
-+-------------+-----------+
++------------------------+-----------+
+| Name                   | Power (W) |
++------------------------+-----------+
+| Top_Student            |     0.007 |
+|   ac                   |    <0.001 |
+|   clk_20k              |    <0.001 |
+|   clk_6p25             |    <0.001 |
+|   od                   |    <0.001 |
+|   tb                   |    <0.001 |
+|     debouncer_inst     |    <0.001 |
+|       clk_divider_inst |    <0.001 |
+|       dff1             |     0.000 |
+|       dff2             |     0.000 |
++------------------------+-----------+
 
 

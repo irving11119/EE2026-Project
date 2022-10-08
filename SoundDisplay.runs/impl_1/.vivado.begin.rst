@@ -1,5 +1,9 @@
 <?xml version="1.0"?>
 <ProcessHandle Version="1" Minor="0">
+<<<<<<< HEAD
     <Process Command="vivado.bat" Owner="irvin" Host="DESKTOP-JI6E2KE" Pid="8752">
+=======
+    <Process Command="vivado.bat" Owner="firwer" Host="WP-HP-OMEN" Pid="193044">
+>>>>>>> OTB
     </Process>
 </ProcessHandle>
