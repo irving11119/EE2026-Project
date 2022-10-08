@@ -65,12 +65,15 @@ set_property IOSTANDARD LVCMOS33 [get_ports {led[12]}]
 set_property src_info {type:XDC file:1 line:111 export:INPUT save:INPUT read:READ} [current_design]
 set_property PACKAGE_PIN U18 [get_ports btnC]
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 set_property src_info {type:XDC file:1 line:77 export:INPUT save:INPUT read:READ} [current_design]
 set_property PACKAGE_PIN L1 [get_ports {led[13]}]
 set_property src_info {type:XDC file:1 line:119 export:INPUT save:INPUT read:READ} [current_design]
 set_property PACKAGE_PIN U17 [get_ports btnD]
 >>>>>>> OTB
+=======
+>>>>>>> 383dcf4d62ab91d0b9696eda66d4ab5c8656926e
 =======
 >>>>>>> 383dcf4d62ab91d0b9696eda66d4ab5c8656926e
 set_property src_info {type:XDC file:1 line:154 export:INPUT save:INPUT read:READ} [current_design]

@@ -3,6 +3,9 @@ Design Route Status
    ------------------------------------------- : ----------- :
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 383dcf4d62ab91d0b9696eda66d4ab5c8656926e
 =======
 >>>>>>> 383dcf4d62ab91d0b9696eda66d4ab5c8656926e
    # of logical nets.......................... :         706 :
@@ -11,6 +14,7 @@ Design Route Status
        # of routable nets..................... :         461 :
            # of fully routed nets............. :         461 :
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
    # of logical nets.......................... :         876 :
        # of nets not needing routing.......... :         347 :
@@ -18,6 +22,8 @@ Design Route Status
        # of routable nets..................... :         529 :
            # of fully routed nets............. :         529 :
 >>>>>>> OTB
+=======
+>>>>>>> 383dcf4d62ab91d0b9696eda66d4ab5c8656926e
 =======
 >>>>>>> 383dcf4d62ab91d0b9696eda66d4ab5c8656926e
        # of nets with routing errors.......... :           0 :

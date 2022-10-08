@@ -3,12 +3,17 @@ Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 | Tool Version : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 | Date         : Mon Oct  3 21:48:52 2022
 | Host         : DESKTOP-JI6E2KE running 64-bit major release  (build 9200)
 =======
 | Date         : Sat Oct  8 17:24:17 2022
 | Host         : WP-HP-OMEN running 64-bit major release  (build 9200)
 >>>>>>> OTB
+=======
+| Date         : Mon Oct  3 21:48:52 2022
+| Host         : DESKTOP-JI6E2KE running 64-bit major release  (build 9200)
+>>>>>>> 383dcf4d62ab91d0b9696eda66d4ab5c8656926e
 =======
 | Date         : Mon Oct  3 21:48:52 2022
 | Host         : DESKTOP-JI6E2KE running 64-bit major release  (build 9200)
@@ -42,6 +47,9 @@ Table of Contents
 +-------------------------+------+-------+-----------+-------+
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 383dcf4d62ab91d0b9696eda66d4ab5c8656926e
 =======
 >>>>>>> 383dcf4d62ab91d0b9696eda66d4ab5c8656926e
 | Slice LUTs*             |  209 |     0 |     20800 |  1.00 |
@@ -50,6 +58,7 @@ Table of Contents
 | Slice Registers         |  269 |     0 |     41600 |  0.65 |
 |   Register as Flip Flop |  269 |     0 |     41600 |  0.65 |
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 | Slice LUTs*             |  325 |     0 |     20800 |  1.56 |
 |   LUT as Logic          |  325 |     0 |     20800 |  1.56 |
@@ -57,6 +66,8 @@ Table of Contents
 | Slice Registers         |  239 |     0 |     41600 |  0.57 |
 |   Register as Flip Flop |  239 |     0 |     41600 |  0.57 |
 >>>>>>> OTB
+=======
+>>>>>>> 383dcf4d62ab91d0b9696eda66d4ab5c8656926e
 =======
 >>>>>>> 383dcf4d62ab91d0b9696eda66d4ab5c8656926e
 |   Register as Latch     |    0 |     0 |     41600 |  0.00 |
@@ -82,12 +93,17 @@ Table of Contents
 | 0     |          Yes |           - |        Reset |
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 | 1     |          Yes |         Set |            - |
 | 268   |          Yes |       Reset |            - |
 =======
 | 0     |          Yes |         Set |            - |
 | 239   |          Yes |       Reset |            - |
 >>>>>>> OTB
+=======
+| 1     |          Yes |         Set |            - |
+| 268   |          Yes |       Reset |            - |
+>>>>>>> 383dcf4d62ab91d0b9696eda66d4ab5c8656926e
 =======
 | 1     |          Yes |         Set |            - |
 | 268   |          Yes |       Reset |            - |
@@ -185,6 +201,9 @@ Table of Contents
 +----------+------+---------------------+
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 383dcf4d62ab91d0b9696eda66d4ab5c8656926e
 =======
 >>>>>>> 383dcf4d62ab91d0b9696eda66d4ab5c8656926e
 | FDRE     |  268 |        Flop & Latch |
@@ -197,6 +216,7 @@ Table of Contents
 | LUT4     |   19 |                 LUT |
 | LUT1     |    7 |                 LUT |
 | IBUF     |    4 |                  IO |
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 | FDRE     |  239 |        Flop & Latch |
@@ -212,6 +232,8 @@ Table of Contents
 | MUXF7    |    2 |               MuxFx |
 | IBUF     |    2 |                  IO |
 >>>>>>> OTB
+=======
+>>>>>>> 383dcf4d62ab91d0b9696eda66d4ab5c8656926e
 =======
 >>>>>>> 383dcf4d62ab91d0b9696eda66d4ab5c8656926e
 | BUFG     |    2 |               Clock |

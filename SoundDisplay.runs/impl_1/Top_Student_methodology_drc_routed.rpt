@@ -3,12 +3,17 @@ Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 | Tool Version : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 | Date         : Mon Oct  3 21:50:01 2022
 | Host         : DESKTOP-JI6E2KE running 64-bit major release  (build 9200)
 =======
 | Date         : Sat Oct  8 17:25:21 2022
 | Host         : WP-HP-OMEN running 64-bit major release  (build 9200)
 >>>>>>> OTB
+=======
+| Date         : Mon Oct  3 21:50:01 2022
+| Host         : DESKTOP-JI6E2KE running 64-bit major release  (build 9200)
+>>>>>>> 383dcf4d62ab91d0b9696eda66d4ab5c8656926e
 =======
 | Date         : Mon Oct  3 21:50:01 2022
 | Host         : DESKTOP-JI6E2KE running 64-bit major release  (build 9200)
@@ -35,6 +40,9 @@ Table of Contents
              Max violations: <unlimited>
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 383dcf4d62ab91d0b9696eda66d4ab5c8656926e
 =======
 >>>>>>> 383dcf4d62ab91d0b9696eda66d4ab5c8656926e
              Violations found: 160
@@ -43,6 +51,7 @@ Table of Contents
 +-----------+----------+-------------------------------+------------+
 | TIMING-17 | Warning  | Non-clocked sequential cell   | 157        |
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
              Violations found: 120
 +-----------+----------+-------------------------------+------------+
@@ -50,6 +59,8 @@ Table of Contents
 +-----------+----------+-------------------------------+------------+
 | TIMING-17 | Warning  | Non-clocked sequential cell   | 117        |
 >>>>>>> OTB
+=======
+>>>>>>> 383dcf4d62ab91d0b9696eda66d4ab5c8656926e
 =======
 >>>>>>> 383dcf4d62ab91d0b9696eda66d4ab5c8656926e
 | TIMING-18 | Warning  | Missing input or output delay | 3          |
@@ -640,6 +651,36 @@ Related violations: <none>
 TIMING-17#117 Warning
 Non-clocked sequential cell  
 The clock pin tb/debouncer_inst/dff2/Qbar_reg/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#152 Warning
+Non-clocked sequential cell  
+The clock pin oled_data_reg[10]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#153 Warning
+Non-clocked sequential cell  
+The clock pin oled_data_reg[11]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#154 Warning
+Non-clocked sequential cell  
+The clock pin oled_data_reg[12]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#155 Warning
+Non-clocked sequential cell  
+The clock pin oled_data_reg[13]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#156 Warning
+Non-clocked sequential cell  
+The clock pin oled_data_reg[14]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#157 Warning
+Non-clocked sequential cell  
+The clock pin oled_data_reg[15]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#152 Warning

@@ -5,6 +5,9 @@ The structure and the elements are likely to change over the next few releases.
 This means code written to parse this file will need to be revisited each subsequent release.-->
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 383dcf4d62ab91d0b9696eda66d4ab5c8656926e
 =======
 >>>>>>> 383dcf4d62ab91d0b9696eda66d4ab5c8656926e
 <application name="pa" timeStamp="Mon Oct  3 21:48:12 2022">
@@ -12,12 +15,15 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="ProjectID" value="08b9292cd5be4639a5b80e0b4edebc16" type="ProjectID"/>
 <property name="ProjectIteration" value="10" type="ProjectIteration"/>
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <application name="pa" timeStamp="Sat Oct  8 17:23:41 2022">
 <section name="Project Information" visible="false">
 <property name="ProjectID" value="08b9292cd5be4639a5b80e0b4edebc16" type="ProjectID"/>
 <property name="ProjectIteration" value="52" type="ProjectIteration"/>
 >>>>>>> OTB
+=======
+>>>>>>> 383dcf4d62ab91d0b9696eda66d4ab5c8656926e
 =======
 >>>>>>> 383dcf4d62ab91d0b9696eda66d4ab5c8656926e
 </section>
@@ -34,6 +40,9 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="ArchiveProject" value="1" type="JavaHandler"/>
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 383dcf4d62ab91d0b9696eda66d4ab5c8656926e
 =======
 >>>>>>> 383dcf4d62ab91d0b9696eda66d4ab5c8656926e
 <property name="AutoConnectTarget" value="5" type="JavaHandler"/>
@@ -66,6 +75,9 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="ToolsSettings" value="1" type="JavaHandler"/>
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 383dcf4d62ab91d0b9696eda66d4ab5c8656926e
 =======
 >>>>>>> 383dcf4d62ab91d0b9696eda66d4ab5c8656926e
 </item>
@@ -102,6 +114,9 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="FPGAChooser_SPEED" value="1" type="GuiHandlerData"/>
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 383dcf4d62ab91d0b9696eda66d4ab5c8656926e
 =======
 >>>>>>> 383dcf4d62ab91d0b9696eda66d4ab5c8656926e
 <property name="FileSetPanel_FILE_SET_PANEL_TREE" value="140" type="GuiHandlerData"/>
@@ -138,6 +153,7 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="PACommandNames_OPEN_HARDWARE_MANAGER" value="3" type="GuiHandlerData"/>
 <property name="PACommandNames_RUN_BITGEN" value="9" type="GuiHandlerData"/>
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <property name="MainMenuMgr_PROJECT" value="5" type="GuiHandlerData"/>
 <property name="MainMenuMgr_TEXT_EDITOR" value="3" type="GuiHandlerData"/>
@@ -153,6 +169,8 @@ This means code written to parse this file will need to be revisited each subseq
 >>>>>>> OTB
 =======
 >>>>>>> 383dcf4d62ab91d0b9696eda66d4ab5c8656926e
+=======
+>>>>>>> 383dcf4d62ab91d0b9696eda66d4ab5c8656926e
 <property name="PACommandNames_SET_AS_TOP" value="1" type="GuiHandlerData"/>
 <property name="PACommandNames_SIMULATION_LIVE_BREAK" value="4" type="GuiHandlerData"/>
 <property name="PACommandNames_SIMULATION_LIVE_RUN" value="4" type="GuiHandlerData"/>
@@ -162,6 +180,9 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="PACommandNames_TOGGLE_VIEW_NAV" value="1" type="GuiHandlerData"/>
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 383dcf4d62ab91d0b9696eda66d4ab5c8656926e
 =======
 >>>>>>> 383dcf4d62ab91d0b9696eda66d4ab5c8656926e
 <property name="PAViews_CODE" value="8" type="GuiHandlerData"/>
@@ -170,6 +191,7 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="ProgramDebugTab_PROGRAM_DEVICE" value="8" type="GuiHandlerData"/>
 <property name="ProgramFpgaDialog_PROGRAM" value="7" type="GuiHandlerData"/>
 <property name="ProjectNameChooser_PROJECT_NAME" value="2" type="GuiHandlerData"/>
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <property name="PACommandNames_ZOOM_FIT" value="2" type="GuiHandlerData"/>
@@ -187,6 +209,8 @@ This means code written to parse this file will need to be revisited each subseq
 >>>>>>> OTB
 =======
 >>>>>>> 383dcf4d62ab91d0b9696eda66d4ab5c8656926e
+=======
+>>>>>>> 383dcf4d62ab91d0b9696eda66d4ab5c8656926e
 <property name="RDICommands_CUSTOM_COMMANDS" value="1" type="GuiHandlerData"/>
 <property name="RDICommands_DELETE" value="1" type="GuiHandlerData"/>
 <property name="RDICommands_SETTINGS" value="1" type="GuiHandlerData"/>
@@ -196,6 +220,9 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="SaveProjectUtils_CANCEL" value="1" type="GuiHandlerData"/>
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 383dcf4d62ab91d0b9696eda66d4ab5c8656926e
 =======
 >>>>>>> 383dcf4d62ab91d0b9696eda66d4ab5c8656926e
 <property name="SaveProjectUtils_SAVE" value="5" type="GuiHandlerData"/>
@@ -211,6 +238,7 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="SyntheticaStateMonitor_CANCEL" value="1" type="GuiHandlerData"/>
 <property name="TaskBanner_CLOSE" value="3" type="GuiHandlerData"/>
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <property name="SaveProjectUtils_SAVE" value="14" type="GuiHandlerData"/>
 <property name="SettingsDialog_OPTIONS_TREE" value="1" type="GuiHandlerData"/>
@@ -223,6 +251,8 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="SyntheticaStateMonitor_CANCEL" value="3" type="GuiHandlerData"/>
 <property name="TaskBanner_CLOSE" value="10" type="GuiHandlerData"/>
 >>>>>>> OTB
+=======
+>>>>>>> 383dcf4d62ab91d0b9696eda66d4ab5c8656926e
 =======
 >>>>>>> 383dcf4d62ab91d0b9696eda66d4ab5c8656926e
 <property name="WaveformNameTree_WAVEFORM_NAME_TREE" value="1" type="GuiHandlerData"/>

@@ -35,12 +35,16 @@ set_property ip_cache_permissions {read write} [current_project]
 read_verilog -library xil_defaultlib {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 383dcf4d62ab91d0b9696eda66d4ab5c8656926e
 =======
 >>>>>>> 383dcf4d62ab91d0b9696eda66d4ab5c8656926e
   C:/Users/irvin/EE2026/EE2026-Project/SoundDisplay.srcs/sources_1/new/Audio_Capture.v
   C:/Users/irvin/EE2026/EE2026-Project/SoundDisplay.srcs/sources_1/new/Oled_Display.v
   C:/Users/irvin/EE2026/EE2026-Project/SoundDisplay.srcs/sources_1/new/clk_divider.v
   C:/Users/irvin/EE2026/EE2026-Project/SoundDisplay.srcs/sources_1/new/Top_Student.v
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
   C:/Users/firwe/Desktop/Y2S1/EE2026/SoundDisplay/SoundDisplay.srcs/sources_1/new/Audio_Capture.v
@@ -51,6 +55,8 @@ read_verilog -library xil_defaultlib {
   C:/Users/firwe/Desktop/Y2S1/EE2026/SoundDisplay/SoundDisplay.srcs/sources_1/new/debouncer.v
   C:/Users/firwe/Desktop/Y2S1/EE2026/SoundDisplay/SoundDisplay.srcs/sources_1/new/Top_Student.v
 >>>>>>> OTB
+=======
+>>>>>>> 383dcf4d62ab91d0b9696eda66d4ab5c8656926e
 =======
 >>>>>>> 383dcf4d62ab91d0b9696eda66d4ab5c8656926e
 }

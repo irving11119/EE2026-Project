@@ -3,12 +3,17 @@ Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 | Tool Version : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 | Date         : Mon Oct  3 21:49:35 2022
 | Host         : DESKTOP-JI6E2KE running 64-bit major release  (build 9200)
 =======
 | Date         : Sat Oct  8 17:24:57 2022
 | Host         : WP-HP-OMEN running 64-bit major release  (build 9200)
 >>>>>>> OTB
+=======
+| Date         : Mon Oct  3 21:49:35 2022
+| Host         : DESKTOP-JI6E2KE running 64-bit major release  (build 9200)
+>>>>>>> 383dcf4d62ab91d0b9696eda66d4ab5c8656926e
 =======
 | Date         : Mon Oct  3 21:49:35 2022
 | Host         : DESKTOP-JI6E2KE running 64-bit major release  (build 9200)
@@ -37,10 +42,13 @@ Table of Contents
 | Number of unique control sets                            |    13 |
 | Unused register locations in slices containing registers |    22 |
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 | Number of unique control sets                            |    11 |
 | Unused register locations in slices containing registers |    26 |
 >>>>>>> OTB
+=======
+>>>>>>> 383dcf4d62ab91d0b9696eda66d4ab5c8656926e
 =======
 >>>>>>> 383dcf4d62ab91d0b9696eda66d4ab5c8656926e
 +----------------------------------------------------------+-------+
@@ -55,6 +63,9 @@ Table of Contents
 |      2 |            1 |
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 383dcf4d62ab91d0b9696eda66d4ab5c8656926e
 =======
 >>>>>>> 383dcf4d62ab91d0b9696eda66d4ab5c8656926e
 |      8 |            1 |
@@ -74,6 +85,9 @@ Table of Contents
 +--------------+-----------------------+------------------------+-----------------+--------------+
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 383dcf4d62ab91d0b9696eda66d4ab5c8656926e
 =======
 >>>>>>> 383dcf4d62ab91d0b9696eda66d4ab5c8656926e
 | No           | No                    | No                     |              94 |           17 |
@@ -81,12 +95,15 @@ Table of Contents
 | No           | Yes                   | No                     |             340 |           49 |
 | Yes          | No                    | No                     |               0 |            0 |
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 | No           | No                    | No                     |              34 |           10 |
 | No           | No                    | Yes                    |               0 |            0 |
 | No           | Yes                   | No                     |             340 |           47 |
 | Yes          | No                    | No                     |             104 |           16 |
 >>>>>>> OTB
+=======
+>>>>>>> 383dcf4d62ab91d0b9696eda66d4ab5c8656926e
 =======
 >>>>>>> 383dcf4d62ab91d0b9696eda66d4ab5c8656926e
 | Yes          | No                    | Yes                    |               0 |            0 |
@@ -99,6 +116,9 @@ Table of Contents
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 383dcf4d62ab91d0b9696eda66d4ab5c8656926e
 =======
 >>>>>>> 383dcf4d62ab91d0b9696eda66d4ab5c8656926e
 +---------------------------+---------------------+-----------------------------+------------------+----------------+
@@ -119,6 +139,7 @@ Table of Contents
 | ~clk6p25m_BUFG            |                     | od/spi_word[39]_i_1_n_0     |               14 |             90 |
 +---------------------------+---------------------+-----------------------------+------------------+----------------+
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 +-----------------------------------------+---------------------------------+---------------------------------------------------------+------------------+----------------+
 |               Clock Signal              |          Enable Signal          |                     Set/Reset Signal                    | Slice Load Count | Bel Load Count |
@@ -136,6 +157,8 @@ Table of Contents
 | ~clk6p25m_BUFG                          |                                 | od/spi_word[39]_i_1_n_0                                 |               15 |             90 |
 +-----------------------------------------+---------------------------------+---------------------------------------------------------+------------------+----------------+
 >>>>>>> OTB
+=======
+>>>>>>> 383dcf4d62ab91d0b9696eda66d4ab5c8656926e
 =======
 >>>>>>> 383dcf4d62ab91d0b9696eda66d4ab5c8656926e
 

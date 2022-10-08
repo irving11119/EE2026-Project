@@ -1,10 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 <webTalkData  fileName='usage_statistics_webtalk.xml'  majorVersion='1' minorVersion='0' timeStamp='Mon Oct  3 21:50:14 2022'>
 =======
 <webTalkData  fileName='usage_statistics_webtalk.xml'  majorVersion='1' minorVersion='0' timeStamp='Sat Oct  8 17:25:32 2022'>
 >>>>>>> OTB
+=======
+<webTalkData  fileName='usage_statistics_webtalk.xml'  majorVersion='1' minorVersion='0' timeStamp='Mon Oct  3 21:50:14 2022'>
+>>>>>>> 383dcf4d62ab91d0b9696eda66d4ab5c8656926e
 =======
 <webTalkData  fileName='usage_statistics_webtalk.xml'  majorVersion='1' minorVersion='0' timeStamp='Mon Oct  3 21:50:14 2022'>
 >>>>>>> 383dcf4d62ab91d0b9696eda66d4ab5c8656926e
@@ -14,6 +18,9 @@
   <keyValuePair key="build_version" value="2258646" description="" />
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 383dcf4d62ab91d0b9696eda66d4ab5c8656926e
 =======
 >>>>>>> 383dcf4d62ab91d0b9696eda66d4ab5c8656926e
   <keyValuePair key="date_generated" value="Mon Oct  3 21:50:14 2022" description="" />
@@ -24,6 +31,7 @@
   <keyValuePair key="random_id" value="ad4225a1-a301-4fe5-bfca-7e94c976dca0" description="" />
   <keyValuePair key="registration_id" value="ad4225a1-a301-4fe5-bfca-7e94c976dca0" description="" />
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
   <keyValuePair key="date_generated" value="Sat Oct  8 17:25:32 2022" description="" />
   <keyValuePair key="os_platform" value="WIN64" description="" />
@@ -33,6 +41,8 @@
   <keyValuePair key="random_id" value="cf0c845e-85ab-4d8f-b249-f6c322d25741" description="" />
   <keyValuePair key="registration_id" value="cf0c845e-85ab-4d8f-b249-f6c322d25741" description="" />
 >>>>>>> OTB
+=======
+>>>>>>> 383dcf4d62ab91d0b9696eda66d4ab5c8656926e
 =======
 >>>>>>> 383dcf4d62ab91d0b9696eda66d4ab5c8656926e
   <keyValuePair key="route_design" value="TRUE" description="" />
@@ -88,10 +98,14 @@
   <section name="results" level="2" order="2" description="">
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
    <keyValuePair key="timing-17" value="157" description="" />
 =======
    <keyValuePair key="timing-17" value="117" description="" />
 >>>>>>> OTB
+=======
+   <keyValuePair key="timing-17" value="157" description="" />
+>>>>>>> 383dcf4d62ab91d0b9696eda66d4ab5c8656926e
 =======
    <keyValuePair key="timing-17" value="157" description="" />
 >>>>>>> 383dcf4d62ab91d0b9696eda66d4ab5c8656926e
@@ -123,10 +137,14 @@
    <keyValuePair key="board_selection" value="medium (10&quot;x10&quot;)" description="" />
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
    <keyValuePair key="clocks" value="0.001691" description="" />
 =======
    <keyValuePair key="clocks" value="0.001912" description="" />
 >>>>>>> OTB
+=======
+   <keyValuePair key="clocks" value="0.001691" description="" />
+>>>>>>> 383dcf4d62ab91d0b9696eda66d4ab5c8656926e
 =======
    <keyValuePair key="clocks" value="0.001691" description="" />
 >>>>>>> 383dcf4d62ab91d0b9696eda66d4ab5c8656926e
@@ -143,10 +161,14 @@
    <keyValuePair key="dsp_output_toggle" value="12.500000" description="" />
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
    <keyValuePair key="dynamic" value="0.003906" description="" />
 =======
    <keyValuePair key="dynamic" value="0.007048" description="" />
 >>>>>>> OTB
+=======
+   <keyValuePair key="dynamic" value="0.003906" description="" />
+>>>>>>> 383dcf4d62ab91d0b9696eda66d4ab5c8656926e
 =======
    <keyValuePair key="dynamic" value="0.003906" description="" />
 >>>>>>> 383dcf4d62ab91d0b9696eda66d4ab5c8656926e
@@ -158,6 +180,9 @@
    <keyValuePair key="heatsink" value="medium (Medium Profile)" description="" />
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 383dcf4d62ab91d0b9696eda66d4ab5c8656926e
 =======
 >>>>>>> 383dcf4d62ab91d0b9696eda66d4ab5c8656926e
    <keyValuePair key="i/o" value="0.000816" description="" />
@@ -165,12 +190,15 @@
    <keyValuePair key="junction_temp" value="25.4 (C)" description="" />
    <keyValuePair key="logic" value="0.000674" description="" />
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
    <keyValuePair key="i/o" value="0.003748" description="" />
    <keyValuePair key="input_toggle" value="12.500000" description="" />
    <keyValuePair key="junction_temp" value="25.4 (C)" description="" />
    <keyValuePair key="logic" value="0.000686" description="" />
 >>>>>>> OTB
+=======
+>>>>>>> 383dcf4d62ab91d0b9696eda66d4ab5c8656926e
 =======
 >>>>>>> 383dcf4d62ab91d0b9696eda66d4ab5c8656926e
    <keyValuePair key="mgtavcc_dynamic_current" value="0.000000" description="" />
@@ -185,10 +213,14 @@
    <keyValuePair key="off-chip_power" value="0.000000" description="" />
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
    <keyValuePair key="on-chip_power" value="0.075616" description="" />
 =======
    <keyValuePair key="on-chip_power" value="0.078764" description="" />
 >>>>>>> OTB
+=======
+   <keyValuePair key="on-chip_power" value="0.075616" description="" />
+>>>>>>> 383dcf4d62ab91d0b9696eda66d4ab5c8656926e
 =======
    <keyValuePair key="on-chip_power" value="0.075616" description="" />
 >>>>>>> 383dcf4d62ab91d0b9696eda66d4ab5c8656926e
@@ -198,12 +230,17 @@
    <keyValuePair key="package" value="cpg236" description="" />
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
    <keyValuePair key="pct_clock_constrained" value="1.000000" description="" />
    <keyValuePair key="pct_inputs_defined" value="25" description="" />
 =======
    <keyValuePair key="pct_clock_constrained" value="0.000000" description="" />
    <keyValuePair key="pct_inputs_defined" value="50" description="" />
 >>>>>>> OTB
+=======
+   <keyValuePair key="pct_clock_constrained" value="1.000000" description="" />
+   <keyValuePair key="pct_inputs_defined" value="25" description="" />
+>>>>>>> 383dcf4d62ab91d0b9696eda66d4ab5c8656926e
 =======
    <keyValuePair key="pct_clock_constrained" value="1.000000" description="" />
    <keyValuePair key="pct_inputs_defined" value="25" description="" />
@@ -217,10 +254,14 @@
    <keyValuePair key="signal_rate" value="False" description="" />
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
    <keyValuePair key="signals" value="0.000725" description="" />
 =======
    <keyValuePair key="signals" value="0.000701" description="" />
 >>>>>>> OTB
+=======
+   <keyValuePair key="signals" value="0.000725" description="" />
+>>>>>>> 383dcf4d62ab91d0b9696eda66d4ab5c8656926e
 =======
    <keyValuePair key="signals" value="0.000725" description="" />
 >>>>>>> 383dcf4d62ab91d0b9696eda66d4ab5c8656926e
@@ -242,10 +283,14 @@
    <keyValuePair key="vccadc_voltage" value="1.800000" description="" />
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
    <keyValuePair key="vccaux_dynamic_current" value="0.000027" description="" />
 =======
    <keyValuePair key="vccaux_dynamic_current" value="0.000135" description="" />
 >>>>>>> OTB
+=======
+   <keyValuePair key="vccaux_dynamic_current" value="0.000027" description="" />
+>>>>>>> 383dcf4d62ab91d0b9696eda66d4ab5c8656926e
 =======
    <keyValuePair key="vccaux_dynamic_current" value="0.000027" description="" />
 >>>>>>> 383dcf4d62ab91d0b9696eda66d4ab5c8656926e
@@ -257,10 +302,13 @@
    <keyValuePair key="vccaux_static_current" value="0.012615" description="" />
    <keyValuePair key="vccaux_total_current" value="0.012642" description="" />
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
    <keyValuePair key="vccaux_static_current" value="0.012616" description="" />
    <keyValuePair key="vccaux_total_current" value="0.012750" description="" />
 >>>>>>> OTB
+=======
+>>>>>>> 383dcf4d62ab91d0b9696eda66d4ab5c8656926e
 =======
 >>>>>>> 383dcf4d62ab91d0b9696eda66d4ab5c8656926e
    <keyValuePair key="vccaux_voltage" value="1.800000" description="" />
@@ -268,6 +316,7 @@
    <keyValuePair key="vccbram_static_current" value="0.000162" description="" />
    <keyValuePair key="vccbram_total_current" value="0.000162" description="" />
    <keyValuePair key="vccbram_voltage" value="1.000000" description="" />
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
    <keyValuePair key="vccint_dynamic_current" value="0.003162" description="" />
@@ -278,6 +327,11 @@
    <keyValuePair key="vccint_static_current" value="0.009546" description="" />
    <keyValuePair key="vccint_total_current" value="0.012914" description="" />
 >>>>>>> OTB
+=======
+   <keyValuePair key="vccint_dynamic_current" value="0.003162" description="" />
+   <keyValuePair key="vccint_static_current" value="0.009540" description="" />
+   <keyValuePair key="vccint_total_current" value="0.012703" description="" />
+>>>>>>> 383dcf4d62ab91d0b9696eda66d4ab5c8656926e
 =======
    <keyValuePair key="vccint_dynamic_current" value="0.003162" description="" />
    <keyValuePair key="vccint_static_current" value="0.009540" description="" />
@@ -306,6 +360,7 @@
    <keyValuePair key="vcco25_voltage" value="2.500000" description="" />
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
    <keyValuePair key="vcco33_dynamic_current" value="0.000211" description="" />
    <keyValuePair key="vcco33_static_current" value="0.001000" description="" />
    <keyValuePair key="vcco33_total_current" value="0.001211" description="" />
@@ -314,6 +369,11 @@
    <keyValuePair key="vcco33_static_current" value="0.001000" description="" />
    <keyValuePair key="vcco33_total_current" value="0.002042" description="" />
 >>>>>>> OTB
+=======
+   <keyValuePair key="vcco33_dynamic_current" value="0.000211" description="" />
+   <keyValuePair key="vcco33_static_current" value="0.001000" description="" />
+   <keyValuePair key="vcco33_total_current" value="0.001211" description="" />
+>>>>>>> 383dcf4d62ab91d0b9696eda66d4ab5c8656926e
 =======
    <keyValuePair key="vcco33_dynamic_current" value="0.000211" description="" />
    <keyValuePair key="vcco33_static_current" value="0.001000" description="" />
@@ -421,6 +481,9 @@
    <keyValuePair key="fdre_functional_category" value="Flop &amp; Latch" description="" />
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 383dcf4d62ab91d0b9696eda66d4ab5c8656926e
 =======
 >>>>>>> 383dcf4d62ab91d0b9696eda66d4ab5c8656926e
    <keyValuePair key="fdre_used" value="268" description="" />
@@ -429,6 +492,7 @@
    <keyValuePair key="ibuf_functional_category" value="IO" description="" />
    <keyValuePair key="ibuf_used" value="4" description="" />
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
    <keyValuePair key="fdre_used" value="239" description="" />
    <keyValuePair key="ibuf_functional_category" value="IO" description="" />
@@ -436,11 +500,16 @@
 >>>>>>> OTB
 =======
 >>>>>>> 383dcf4d62ab91d0b9696eda66d4ab5c8656926e
+=======
+>>>>>>> 383dcf4d62ab91d0b9696eda66d4ab5c8656926e
    <keyValuePair key="lut1_functional_category" value="LUT" description="" />
    <keyValuePair key="lut1_used" value="10" description="" />
    <keyValuePair key="lut2_functional_category" value="LUT" description="" />
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 383dcf4d62ab91d0b9696eda66d4ab5c8656926e
 =======
 >>>>>>> 383dcf4d62ab91d0b9696eda66d4ab5c8656926e
    <keyValuePair key="lut2_used" value="22" description="" />
@@ -452,6 +521,7 @@
    <keyValuePair key="lut5_used" value="23" description="" />
    <keyValuePair key="lut6_functional_category" value="LUT" description="" />
    <keyValuePair key="lut6_used" value="124" description="" />
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
    <keyValuePair key="lut2_used" value="66" description="" />
@@ -466,6 +536,8 @@
    <keyValuePair key="muxf7_functional_category" value="MuxFx" description="" />
    <keyValuePair key="muxf7_used" value="2" description="" />
 >>>>>>> OTB
+=======
+>>>>>>> 383dcf4d62ab91d0b9696eda66d4ab5c8656926e
 =======
 >>>>>>> 383dcf4d62ab91d0b9696eda66d4ab5c8656926e
    <keyValuePair key="obuf_functional_category" value="IO" description="" />
@@ -484,12 +556,17 @@
    <keyValuePair key="f8_muxes_util_percentage" value="0.00" description="" />
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
    <keyValuePair key="fully_used_lut_ff_pairs_fixed" value="0.65" description="" />
    <keyValuePair key="fully_used_lut_ff_pairs_used" value="7" description="" />
 =======
    <keyValuePair key="fully_used_lut_ff_pairs_fixed" value="0.57" description="" />
    <keyValuePair key="fully_used_lut_ff_pairs_used" value="16" description="" />
 >>>>>>> OTB
+=======
+   <keyValuePair key="fully_used_lut_ff_pairs_fixed" value="0.65" description="" />
+   <keyValuePair key="fully_used_lut_ff_pairs_used" value="7" description="" />
+>>>>>>> 383dcf4d62ab91d0b9696eda66d4ab5c8656926e
 =======
    <keyValuePair key="fully_used_lut_ff_pairs_fixed" value="0.65" description="" />
    <keyValuePair key="fully_used_lut_ff_pairs_used" value="7" description="" />
@@ -502,6 +579,9 @@
    <keyValuePair key="lut_as_logic_fixed" value="0" description="" />
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 383dcf4d62ab91d0b9696eda66d4ab5c8656926e
 =======
 >>>>>>> 383dcf4d62ab91d0b9696eda66d4ab5c8656926e
    <keyValuePair key="lut_as_logic_used" value="208" description="" />
@@ -509,12 +589,15 @@
    <keyValuePair key="lut_as_logic_util_percentage" value="1.00" description="" />
    <keyValuePair key="lut_as_logic_util_percentage" value="1.00" description="" />
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
    <keyValuePair key="lut_as_logic_used" value="317" description="" />
    <keyValuePair key="lut_as_logic_used" value="317" description="" />
    <keyValuePair key="lut_as_logic_util_percentage" value="1.52" description="" />
    <keyValuePair key="lut_as_logic_util_percentage" value="1.52" description="" />
 >>>>>>> OTB
+=======
+>>>>>>> 383dcf4d62ab91d0b9696eda66d4ab5c8656926e
 =======
 >>>>>>> 383dcf4d62ab91d0b9696eda66d4ab5c8656926e
    <keyValuePair key="lut_as_memory_available" value="9600" description="" />
@@ -530,6 +613,9 @@
    <keyValuePair key="lut_ff_pairs_with_one_unused_flip_flop_fixed" value="0" description="" />
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 383dcf4d62ab91d0b9696eda66d4ab5c8656926e
 =======
 >>>>>>> 383dcf4d62ab91d0b9696eda66d4ab5c8656926e
    <keyValuePair key="lut_ff_pairs_with_one_unused_flip_flop_used" value="87" description="" />
@@ -543,6 +629,7 @@
    <keyValuePair key="register_as_flip_flop_fixed" value="0" description="" />
    <keyValuePair key="register_as_flip_flop_used" value="269" description="" />
    <keyValuePair key="register_as_flip_flop_util_percentage" value="0.65" description="" />
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
    <keyValuePair key="lut_ff_pairs_with_one_unused_flip_flop_used" value="63" description="" />
@@ -559,6 +646,8 @@
 >>>>>>> OTB
 =======
 >>>>>>> 383dcf4d62ab91d0b9696eda66d4ab5c8656926e
+=======
+>>>>>>> 383dcf4d62ab91d0b9696eda66d4ab5c8656926e
    <keyValuePair key="register_as_latch_available" value="41600" description="" />
    <keyValuePair key="register_as_latch_fixed" value="0" description="" />
    <keyValuePair key="register_as_latch_used" value="0" description="" />
@@ -569,6 +658,9 @@
    <keyValuePair key="slice_luts_fixed" value="0" description="" />
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 383dcf4d62ab91d0b9696eda66d4ab5c8656926e
 =======
 >>>>>>> 383dcf4d62ab91d0b9696eda66d4ab5c8656926e
    <keyValuePair key="slice_luts_used" value="208" description="" />
@@ -591,6 +683,7 @@
    <keyValuePair key="using_o6_output_only_fixed" value="0" description="" />
    <keyValuePair key="using_o6_output_only_used" value="186" description="" />
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
    <keyValuePair key="slice_luts_used" value="317" description="" />
    <keyValuePair key="slice_luts_util_percentage" value="1.52" description="" />
@@ -612,6 +705,8 @@
    <keyValuePair key="using_o6_output_only_fixed" value="0" description="" />
    <keyValuePair key="using_o6_output_only_used" value="244" description="" />
 >>>>>>> OTB
+=======
+>>>>>>> 383dcf4d62ab91d0b9696eda66d4ab5c8656926e
 =======
 >>>>>>> 383dcf4d62ab91d0b9696eda66d4ab5c8656926e
   </section>
@@ -658,10 +753,14 @@
   <section name="usage" level="2" order="1" description="">
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
    <keyValuePair key="actual_expansions" value="553802" description="" />
 =======
    <keyValuePair key="actual_expansions" value="558658" description="" />
 >>>>>>> OTB
+=======
+   <keyValuePair key="actual_expansions" value="553802" description="" />
+>>>>>>> 383dcf4d62ab91d0b9696eda66d4ab5c8656926e
 =======
    <keyValuePair key="actual_expansions" value="553802" description="" />
 >>>>>>> 383dcf4d62ab91d0b9696eda66d4ab5c8656926e
@@ -676,6 +775,9 @@
    <keyValuePair key="effort" value="2" description="" />
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 383dcf4d62ab91d0b9696eda66d4ab5c8656926e
 =======
 >>>>>>> 383dcf4d62ab91d0b9696eda66d4ab5c8656926e
    <keyValuePair key="estimated_expansions" value="462876" description="" />
@@ -688,6 +790,7 @@
    <keyValuePair key="nets" value="716" description="" />
    <keyValuePair key="pins" value="3382" description="" />
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
    <keyValuePair key="estimated_expansions" value="305592" description="" />
    <keyValuePair key="ff" value="239" description="" />
@@ -699,6 +802,8 @@
    <keyValuePair key="nets" value="893" description="" />
    <keyValuePair key="pins" value="4283" description="" />
 >>>>>>> OTB
+=======
+>>>>>>> 383dcf4d62ab91d0b9696eda66d4ab5c8656926e
 =======
 >>>>>>> 383dcf4d62ab91d0b9696eda66d4ab5c8656926e
    <keyValuePair key="pll" value="0" description="" />
@@ -748,6 +853,9 @@
   <section name="usage" level="2" order="2" description="">
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 383dcf4d62ab91d0b9696eda66d4ab5c8656926e
 =======
 >>>>>>> 383dcf4d62ab91d0b9696eda66d4ab5c8656926e
    <keyValuePair key="elapsed" value="00:00:31s" description="" />
@@ -755,12 +863,15 @@
    <keyValuePair key="memory_gain" value="531.438MB" description="" />
    <keyValuePair key="memory_peak" value="776.664MB" description="" />
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
    <keyValuePair key="elapsed" value="00:00:28s" description="" />
    <keyValuePair key="hls_ip" value="0" description="" />
    <keyValuePair key="memory_gain" value="523.145MB" description="" />
    <keyValuePair key="memory_peak" value="768.391MB" description="" />
 >>>>>>> OTB
+=======
+>>>>>>> 383dcf4d62ab91d0b9696eda66d4ab5c8656926e
 =======
 >>>>>>> 383dcf4d62ab91d0b9696eda66d4ab5c8656926e
   </section>
@@ -837,6 +948,9 @@
   <section name="gui_handlers" level="2" order="1" description="">
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 383dcf4d62ab91d0b9696eda66d4ab5c8656926e
 =======
 >>>>>>> 383dcf4d62ab91d0b9696eda66d4ab5c8656926e
    <keyValuePair key="abstractfileview_reload" value="1" description="" />
@@ -850,6 +964,7 @@
    <keyValuePair key="createsrcfiledialog_file_name" value="5" description="" />
    <keyValuePair key="filesetpanel_file_set_panel_tree" value="140" description="" />
    <keyValuePair key="flownavigatortreepanel_flow_navigator_tree" value="18" description="" />
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
    <keyValuePair key="abstractfileview_reload" value="5" description="" />
@@ -869,6 +984,8 @@
    <keyValuePair key="filtertoolbar_show_all" value="1" description="" />
    <keyValuePair key="flownavigatortreepanel_flow_navigator_tree" value="116" description="" />
 >>>>>>> OTB
+=======
+>>>>>>> 383dcf4d62ab91d0b9696eda66d4ab5c8656926e
 =======
 >>>>>>> 383dcf4d62ab91d0b9696eda66d4ab5c8656926e
    <keyValuePair key="fpgachooser_family" value="1" description="" />
@@ -901,6 +1018,7 @@
    <keyValuePair key="pacommandnames_open_hardware_manager" value="3" description="" />
    <keyValuePair key="pacommandnames_run_bitgen" value="9" description="" />
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
    <keyValuePair key="mainmenumgr_project" value="5" description="" />
    <keyValuePair key="mainmenumgr_text_editor" value="3" description="" />
@@ -916,6 +1034,8 @@
 >>>>>>> OTB
 =======
 >>>>>>> 383dcf4d62ab91d0b9696eda66d4ab5c8656926e
+=======
+>>>>>>> 383dcf4d62ab91d0b9696eda66d4ab5c8656926e
    <keyValuePair key="pacommandnames_set_as_top" value="1" description="" />
    <keyValuePair key="pacommandnames_simulation_live_break" value="4" description="" />
    <keyValuePair key="pacommandnames_simulation_live_run" value="4" description="" />
@@ -925,6 +1045,9 @@
    <keyValuePair key="pacommandnames_toggle_view_nav" value="1" description="" />
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 383dcf4d62ab91d0b9696eda66d4ab5c8656926e
 =======
 >>>>>>> 383dcf4d62ab91d0b9696eda66d4ab5c8656926e
    <keyValuePair key="paviews_code" value="8" description="" />
@@ -933,6 +1056,7 @@
    <keyValuePair key="programdebugtab_program_device" value="8" description="" />
    <keyValuePair key="programfpgadialog_program" value="7" description="" />
    <keyValuePair key="projectnamechooser_project_name" value="2" description="" />
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
    <keyValuePair key="pacommandnames_zoom_fit" value="2" description="" />
@@ -950,6 +1074,8 @@
 >>>>>>> OTB
 =======
 >>>>>>> 383dcf4d62ab91d0b9696eda66d4ab5c8656926e
+=======
+>>>>>>> 383dcf4d62ab91d0b9696eda66d4ab5c8656926e
    <keyValuePair key="rdicommands_custom_commands" value="1" description="" />
    <keyValuePair key="rdicommands_delete" value="1" description="" />
    <keyValuePair key="rdicommands_settings" value="1" description="" />
@@ -959,6 +1085,9 @@
    <keyValuePair key="saveprojectutils_cancel" value="1" description="" />
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 383dcf4d62ab91d0b9696eda66d4ab5c8656926e
 =======
 >>>>>>> 383dcf4d62ab91d0b9696eda66d4ab5c8656926e
    <keyValuePair key="saveprojectutils_save" value="5" description="" />
@@ -974,6 +1103,7 @@
    <keyValuePair key="syntheticastatemonitor_cancel" value="1" description="" />
    <keyValuePair key="taskbanner_close" value="3" description="" />
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
    <keyValuePair key="saveprojectutils_save" value="14" description="" />
    <keyValuePair key="settingsdialog_options_tree" value="1" description="" />
@@ -988,6 +1118,8 @@
 >>>>>>> OTB
 =======
 >>>>>>> 383dcf4d62ab91d0b9696eda66d4ab5c8656926e
+=======
+>>>>>>> 383dcf4d62ab91d0b9696eda66d4ab5c8656926e
    <keyValuePair key="waveformnametree_waveform_name_tree" value="1" description="" />
    <keyValuePair key="waveformview_goto_time_0" value="1" description="" />
   </section>
@@ -996,6 +1128,9 @@
    <keyValuePair key="archiveproject" value="1" description="" />
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 383dcf4d62ab91d0b9696eda66d4ab5c8656926e
 =======
 >>>>>>> 383dcf4d62ab91d0b9696eda66d4ab5c8656926e
    <keyValuePair key="autoconnecttarget" value="5" description="" />
@@ -1028,12 +1163,15 @@
    <keyValuePair key="toolssettings" value="1" description="" />
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
    <keyValuePair key="toolstemplates" value="1" description="" />
    <keyValuePair key="viewtaskimplementation" value="1" description="" />
    <keyValuePair key="zoomfit" value="2" description="" />
    <keyValuePair key="zoomin" value="3" description="" />
 >>>>>>> OTB
+=======
+>>>>>>> 383dcf4d62ab91d0b9696eda66d4ab5c8656926e
 =======
 >>>>>>> 383dcf4d62ab91d0b9696eda66d4ab5c8656926e
   </section>

@@ -3,12 +3,17 @@ Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 | Tool Version     : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 | Date             : Mon Oct  3 21:50:01 2022
 | Host             : DESKTOP-JI6E2KE running 64-bit major release  (build 9200)
 =======
 | Date             : Sat Oct  8 17:25:21 2022
 | Host             : WP-HP-OMEN running 64-bit major release  (build 9200)
 >>>>>>> OTB
+=======
+| Date             : Mon Oct  3 21:50:01 2022
+| Host             : DESKTOP-JI6E2KE running 64-bit major release  (build 9200)
+>>>>>>> 383dcf4d62ab91d0b9696eda66d4ab5c8656926e
 =======
 | Date             : Mon Oct  3 21:50:01 2022
 | Host             : DESKTOP-JI6E2KE running 64-bit major release  (build 9200)
@@ -65,6 +70,9 @@ Table of Contents
 | Clocks         |     0.002 |        3 |       --- |             --- |
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 383dcf4d62ab91d0b9696eda66d4ab5c8656926e
 =======
 >>>>>>> 383dcf4d62ab91d0b9696eda66d4ab5c8656926e
 | Slice Logic    |    <0.001 |      548 |       --- |             --- |
@@ -75,6 +83,7 @@ Table of Contents
 |   BUFG         |     0.000 |        1 |        32 |            3.13 |
 | Signals        |    <0.001 |      457 |       --- |             --- |
 | I/O            |    <0.001 |       25 |       106 |           23.58 |
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 | Slice Logic    |    <0.001 |      703 |       --- |             --- |
@@ -87,6 +96,8 @@ Table of Contents
 | Signals        |    <0.001 |      525 |       --- |             --- |
 | I/O            |     0.004 |       25 |       106 |           23.58 |
 >>>>>>> OTB
+=======
+>>>>>>> 383dcf4d62ab91d0b9696eda66d4ab5c8656926e
 =======
 >>>>>>> 383dcf4d62ab91d0b9696eda66d4ab5c8656926e
 | Static Power   |     0.072 |          |           |                 |
