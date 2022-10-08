@@ -1,8 +1,8 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
-| Date         : Fri Sep 30 16:25:21 2022
-| Host         : WP-HP-OMEN running 64-bit major release  (build 9200)
+| Date         : Mon Oct  3 21:50:01 2022
+| Host         : DESKTOP-JI6E2KE running 64-bit major release  (build 9200)
 | Command      : report_methodology -file Top_Student_methodology_drc_routed.rpt -pb Top_Student_methodology_drc_routed.pb -rpx Top_Student_methodology_drc_routed.rpx
 | Design       : Top_Student
 | Device       : xc7a35tcpg236-1
@@ -23,12 +23,12 @@ Table of Contents
           Floorplan: design_1
       Design limits: <entire design considered>
              Max violations: <unlimited>
-             Violations found: 170
+             Violations found: 160
 +-----------+----------+-------------------------------+------------+
 | Rule      | Severity | Description                   | Violations |
 +-----------+----------+-------------------------------+------------+
-| TIMING-17 | Warning  | Non-clocked sequential cell   | 151        |
-| TIMING-18 | Warning  | Missing input or output delay | 19         |
+| TIMING-17 | Warning  | Non-clocked sequential cell   | 157        |
+| TIMING-18 | Warning  | Missing input or output delay | 3          |
 +-----------+----------+-------------------------------+------------+
 
 2. REPORT DETAILS
@@ -788,97 +788,47 @@ Non-clocked sequential cell
 The clock pin od/spi_word_reg[9]/C is not reached by a timing clock
 Related violations: <none>
 
+TIMING-17#152 Warning
+Non-clocked sequential cell  
+The clock pin oled_data_reg[10]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#153 Warning
+Non-clocked sequential cell  
+The clock pin oled_data_reg[11]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#154 Warning
+Non-clocked sequential cell  
+The clock pin oled_data_reg[12]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#155 Warning
+Non-clocked sequential cell  
+The clock pin oled_data_reg[13]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#156 Warning
+Non-clocked sequential cell  
+The clock pin oled_data_reg[14]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#157 Warning
+Non-clocked sequential cell  
+The clock pin oled_data_reg[15]/C is not reached by a timing clock
+Related violations: <none>
+
 TIMING-18#1 Warning
-Missing input or output delay  
-An input delay is missing on sw[0] relative to clock(s) sys_clk_pin
-Related violations: <none>
-
-TIMING-18#2 Warning
-Missing input or output delay  
-An input delay is missing on sw[10] relative to clock(s) sys_clk_pin
-Related violations: <none>
-
-TIMING-18#3 Warning
-Missing input or output delay  
-An input delay is missing on sw[11] relative to clock(s) sys_clk_pin
-Related violations: <none>
-
-TIMING-18#4 Warning
-Missing input or output delay  
-An input delay is missing on sw[12] relative to clock(s) sys_clk_pin
-Related violations: <none>
-
-TIMING-18#5 Warning
-Missing input or output delay  
-An input delay is missing on sw[13] relative to clock(s) sys_clk_pin
-Related violations: <none>
-
-TIMING-18#6 Warning
-Missing input or output delay  
-An input delay is missing on sw[14] relative to clock(s) sys_clk_pin
-Related violations: <none>
-
-TIMING-18#7 Warning
-Missing input or output delay  
-An input delay is missing on sw[15] relative to clock(s) sys_clk_pin
-Related violations: <none>
-
-TIMING-18#8 Warning
-Missing input or output delay  
-An input delay is missing on sw[1] relative to clock(s) sys_clk_pin
-Related violations: <none>
-
-TIMING-18#9 Warning
-Missing input or output delay  
-An input delay is missing on sw[2] relative to clock(s) sys_clk_pin
-Related violations: <none>
-
-TIMING-18#10 Warning
-Missing input or output delay  
-An input delay is missing on sw[3] relative to clock(s) sys_clk_pin
-Related violations: <none>
-
-TIMING-18#11 Warning
-Missing input or output delay  
-An input delay is missing on sw[4] relative to clock(s) sys_clk_pin
-Related violations: <none>
-
-TIMING-18#12 Warning
-Missing input or output delay  
-An input delay is missing on sw[5] relative to clock(s) sys_clk_pin
-Related violations: <none>
-
-TIMING-18#13 Warning
-Missing input or output delay  
-An input delay is missing on sw[6] relative to clock(s) sys_clk_pin
-Related violations: <none>
-
-TIMING-18#14 Warning
-Missing input or output delay  
-An input delay is missing on sw[7] relative to clock(s) sys_clk_pin
-Related violations: <none>
-
-TIMING-18#15 Warning
-Missing input or output delay  
-An input delay is missing on sw[8] relative to clock(s) sys_clk_pin
-Related violations: <none>
-
-TIMING-18#16 Warning
-Missing input or output delay  
-An input delay is missing on sw[9] relative to clock(s) sys_clk_pin
-Related violations: <none>
-
-TIMING-18#17 Warning
 Missing input or output delay  
 An output delay is missing on J_MIC3_Pin1 relative to clock(s) sys_clk_pin
 Related violations: <none>
 
-TIMING-18#18 Warning
+TIMING-18#2 Warning
 Missing input or output delay  
 An output delay is missing on J_MIC3_Pin4 relative to clock(s) sys_clk_pin
 Related violations: <none>
 
-TIMING-18#19 Warning
+TIMING-18#3 Warning
 Missing input or output delay  
 An output delay is missing on rgb_sclk relative to clock(s) sys_clk_pin
 Related violations: <none>

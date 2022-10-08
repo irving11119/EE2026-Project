@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='C:/Users/firwe/Desktop/Y2S1/EE2026/SoundDisplay/SoundDisplay.runs/impl_1'
+HD_PWD='C:/Users/irvin/EE2026/EE2026-Project/SoundDisplay.runs/impl_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log
