@@ -56,10 +56,14 @@ module Top_Student (
         .sample(mic_in)
         );
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 383dcf4d62ab91d0b9696eda66d4ab5c8656926e
 
     assign my_chosen_clk = sw[0] ? clk_10hz : clk_20khz;
     
     /*
+<<<<<<< HEAD
     always @ (posedge CLK100MHZ) begin
         my_chosen_clk <= sw[0] ? clk_10hz : clk_20khz;
     end
@@ -87,6 +91,19 @@ module Top_Student (
 //    end
     
 >>>>>>> OTB
+=======
+    always @ (posedge CLK100MHZ) begin
+        my_chosen_clk <= sw[0] ? clk_10hz : clk_20khz;
+    end
+    */
+    always @ (posedge my_chosen_clk) begin
+        led <= mic_in; //sum = 9+4 = 13 (R and B)
+    end
+
+    always @ (posedge CLK100MHZ) begin
+        oled_data <= {mic_in[11:7], 6'd0, mic_in[11:7]};
+    end
+>>>>>>> 383dcf4d62ab91d0b9696eda66d4ab5c8656926e
     // Delete this comment and write your codes and instantiations here
 
 endmodule

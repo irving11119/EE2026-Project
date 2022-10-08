@@ -34,10 +34,14 @@ set_property ip_output_repo c:/Users/irvin/EE2026/EE2026-Project/SoundDisplay.ca
 set_property ip_cache_permissions {read write} [current_project]
 read_verilog -library xil_defaultlib {
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 383dcf4d62ab91d0b9696eda66d4ab5c8656926e
   C:/Users/irvin/EE2026/EE2026-Project/SoundDisplay.srcs/sources_1/new/Audio_Capture.v
   C:/Users/irvin/EE2026/EE2026-Project/SoundDisplay.srcs/sources_1/new/Oled_Display.v
   C:/Users/irvin/EE2026/EE2026-Project/SoundDisplay.srcs/sources_1/new/clk_divider.v
   C:/Users/irvin/EE2026/EE2026-Project/SoundDisplay.srcs/sources_1/new/Top_Student.v
+<<<<<<< HEAD
 =======
   C:/Users/firwe/Desktop/Y2S1/EE2026/SoundDisplay/SoundDisplay.srcs/sources_1/new/Audio_Capture.v
   C:/Users/firwe/Desktop/Y2S1/EE2026/SoundDisplay/SoundDisplay.srcs/sources_1/new/DFF.v
@@ -47,6 +51,8 @@ read_verilog -library xil_defaultlib {
   C:/Users/firwe/Desktop/Y2S1/EE2026/SoundDisplay/SoundDisplay.srcs/sources_1/new/debouncer.v
   C:/Users/firwe/Desktop/Y2S1/EE2026/SoundDisplay/SoundDisplay.srcs/sources_1/new/Top_Student.v
 >>>>>>> OTB
+=======
+>>>>>>> 383dcf4d62ab91d0b9696eda66d4ab5c8656926e
 }
 # Mark all dcp files as not used in implementation to prevent them from being
 # stitched into the results of this synthesis run. Any black boxes in the

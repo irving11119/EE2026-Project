@@ -1,12 +1,17 @@
 <?xml version="1.0"?>
 <Runs Version="1" Minor="0">
 <<<<<<< HEAD
+<<<<<<< HEAD
 	<Run Id="synth_1" LaunchDir="C:/Users/irvin/EE2026/EE2026-Project/SoundDisplay.runs/synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
 	<Run Id="impl_1" LaunchDir="C:/Users/irvin/EE2026/EE2026-Project/SoundDisplay.runs/impl_1" FlowId="Vivado_Implementation" FromStepId="init_design" ToStepId="write_bitstream">
 =======
 	<Run Id="synth_1" LaunchDir="C:/Users/firwe/Desktop/Y2S1/EE2026/SoundDisplay/SoundDisplay.runs/synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
 	<Run Id="impl_1" LaunchDir="C:/Users/firwe/Desktop/Y2S1/EE2026/SoundDisplay/SoundDisplay.runs/impl_1" FlowId="Vivado_Implementation" FromStepId="init_design" ToStepId="route_design">
 >>>>>>> OTB
+=======
+	<Run Id="synth_1" LaunchDir="C:/Users/irvin/EE2026/EE2026-Project/SoundDisplay.runs/synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="impl_1" LaunchDir="C:/Users/irvin/EE2026/EE2026-Project/SoundDisplay.runs/impl_1" FlowId="Vivado_Implementation" FromStepId="init_design" ToStepId="write_bitstream">
+>>>>>>> 383dcf4d62ab91d0b9696eda66d4ab5c8656926e
 		<Parent Id="synth_1"/>
 	</Run>
 </Runs>

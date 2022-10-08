@@ -2,12 +2,17 @@ Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
 <<<<<<< HEAD
+<<<<<<< HEAD
 | Date         : Mon Oct  3 21:49:35 2022
 | Host         : DESKTOP-JI6E2KE running 64-bit major release  (build 9200)
 =======
 | Date         : Sat Oct  8 17:24:57 2022
 | Host         : WP-HP-OMEN running 64-bit major release  (build 9200)
 >>>>>>> OTB
+=======
+| Date         : Mon Oct  3 21:49:35 2022
+| Host         : DESKTOP-JI6E2KE running 64-bit major release  (build 9200)
+>>>>>>> 383dcf4d62ab91d0b9696eda66d4ab5c8656926e
 | Command      : report_utilization -file Top_Student_utilization_placed.rpt -pb Top_Student_utilization_placed.pb
 | Design       : Top_Student
 | Device       : 7a35tcpg236-1
@@ -37,11 +42,15 @@ Table of Contents
 |        Site Type        | Used | Fixed | Available | Util% |
 +-------------------------+------+-------+-----------+-------+
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 383dcf4d62ab91d0b9696eda66d4ab5c8656926e
 | Slice LUTs              |  208 |     0 |     20800 |  1.00 |
 |   LUT as Logic          |  208 |     0 |     20800 |  1.00 |
 |   LUT as Memory         |    0 |     0 |      9600 |  0.00 |
 | Slice Registers         |  269 |     0 |     41600 |  0.65 |
 |   Register as Flip Flop |  269 |     0 |     41600 |  0.65 |
+<<<<<<< HEAD
 =======
 | Slice LUTs              |  317 |     0 |     20800 |  1.52 |
 |   LUT as Logic          |  317 |     0 |     20800 |  1.52 |
@@ -49,6 +58,8 @@ Table of Contents
 | Slice Registers         |  239 |     0 |     41600 |  0.57 |
 |   Register as Flip Flop |  239 |     0 |     41600 |  0.57 |
 >>>>>>> OTB
+=======
+>>>>>>> 383dcf4d62ab91d0b9696eda66d4ab5c8656926e
 |   Register as Latch     |    0 |     0 |     41600 |  0.00 |
 | F7 Muxes                |    2 |     0 |     16300 |  0.01 |
 | F8 Muxes                |    0 |     0 |      8150 |  0.00 |
@@ -70,12 +81,17 @@ Table of Contents
 | 0     |          Yes |           - |          Set |
 | 0     |          Yes |           - |        Reset |
 <<<<<<< HEAD
+<<<<<<< HEAD
 | 1     |          Yes |         Set |            - |
 | 268   |          Yes |       Reset |            - |
 =======
 | 0     |          Yes |         Set |            - |
 | 239   |          Yes |       Reset |            - |
 >>>>>>> OTB
+=======
+| 1     |          Yes |         Set |            - |
+| 268   |          Yes |       Reset |            - |
+>>>>>>> 383dcf4d62ab91d0b9696eda66d4ab5c8656926e
 +-------+--------------+-------------+--------------+
 
 
@@ -86,6 +102,9 @@ Table of Contents
 |                 Site Type                 | Used | Fixed | Available | Util% |
 +-------------------------------------------+------+-------+-----------+-------+
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 383dcf4d62ab91d0b9696eda66d4ab5c8656926e
 | Slice                                     |  110 |     0 |      8150 |  1.35 |
 |   SLICEL                                  |   79 |     0 |           |       |
 |   SLICEM                                  |   31 |     0 |           |       |
@@ -153,12 +172,17 @@ Table of Contents
 +-----------------------------+------+-------+-----------+-------+
 | Bonded IOB                  |   25 |    25 |       106 | 23.58 |
 <<<<<<< HEAD
+<<<<<<< HEAD
 |   IOB Master Pads           |   11 |       |           |       |
 |   IOB Slave Pads            |   13 |       |           |       |
 =======
 |   IOB Master Pads           |   12 |       |           |       |
 |   IOB Slave Pads            |   12 |       |           |       |
 >>>>>>> OTB
+=======
+|   IOB Master Pads           |   11 |       |           |       |
+|   IOB Slave Pads            |   13 |       |           |       |
+>>>>>>> 383dcf4d62ab91d0b9696eda66d4ab5c8656926e
 | Bonded IPADs                |    0 |     0 |        10 |  0.00 |
 | Bonded OPADs                |    0 |     0 |         4 |  0.00 |
 | PHY_CONTROL                 |    0 |     0 |         5 |  0.00 |
@@ -218,6 +242,9 @@ Table of Contents
 | Ref Name | Used | Functional Category |
 +----------+------+---------------------+
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 383dcf4d62ab91d0b9696eda66d4ab5c8656926e
 | FDRE     |  268 |        Flop & Latch |
 | LUT6     |  124 |                 LUT |
 | LUT3     |   36 |                 LUT |
@@ -228,6 +255,7 @@ Table of Contents
 | LUT4     |   19 |                 LUT |
 | LUT1     |    6 |                 LUT |
 | IBUF     |    4 |                  IO |
+<<<<<<< HEAD
 =======
 | FDRE     |  239 |        Flop & Latch |
 | LUT6     |  149 |                 LUT |
@@ -242,6 +270,8 @@ Table of Contents
 | MUXF7    |    2 |               MuxFx |
 | IBUF     |    2 |                  IO |
 >>>>>>> OTB
+=======
+>>>>>>> 383dcf4d62ab91d0b9696eda66d4ab5c8656926e
 | BUFG     |    2 |               Clock |
 | FDSE     |    1 |        Flop & Latch |
 +----------+------+---------------------+
