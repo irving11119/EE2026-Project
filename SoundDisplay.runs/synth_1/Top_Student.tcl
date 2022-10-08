@@ -17,7 +17,10 @@ proc create_report { reportName command } {
     send_msg_id runtcl-5 warning "$msg"
   }
 }
+set_param synth.incrementalSynthesisCache C:/Users/firwe/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-191112-WP-HP-OMEN/incrSyn
 set_param xicom.use_bs_reader 1
+set_msg_config -id {Synth 8-256} -limit 10000
+set_msg_config -id {Synth 8-638} -limit 10000
 create_project -in_memory -part xc7a35tcpg236-1
 
 set_param project.singleFileAddWarning.threshold 0
@@ -31,8 +34,11 @@ set_property ip_output_repo c:/Users/firwe/Desktop/Y2S1/EE2026/SoundDisplay/Soun
 set_property ip_cache_permissions {read write} [current_project]
 read_verilog -library xil_defaultlib {
   C:/Users/firwe/Desktop/Y2S1/EE2026/SoundDisplay/SoundDisplay.srcs/sources_1/new/Audio_Capture.v
+  C:/Users/firwe/Desktop/Y2S1/EE2026/SoundDisplay/SoundDisplay.srcs/sources_1/new/DFF.v
+  C:/Users/firwe/Desktop/Y2S1/EE2026/SoundDisplay/SoundDisplay.srcs/sources_1/new/OLED_TB.v
   C:/Users/firwe/Desktop/Y2S1/EE2026/SoundDisplay/SoundDisplay.srcs/sources_1/new/Oled_Display.v
   C:/Users/firwe/Desktop/Y2S1/EE2026/SoundDisplay/SoundDisplay.srcs/sources_1/new/clk_divider.v
+  C:/Users/firwe/Desktop/Y2S1/EE2026/SoundDisplay/SoundDisplay.srcs/sources_1/new/debouncer.v
   C:/Users/firwe/Desktop/Y2S1/EE2026/SoundDisplay/SoundDisplay.srcs/sources_1/new/Top_Student.v
 }
 # Mark all dcp files as not used in implementation to prevent them from being
