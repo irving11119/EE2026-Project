@@ -20,7 +20,7 @@ module Top_Student (
     input CLK100MHZ,
     input [15:0] sw,
     input btnC,
-    input bntU,
+    input btnU,
     input  J_MIC3_Pin3,   // Connect from this signal to Audio_Capture.v
     output J_MIC3_Pin1,   // Connect to this signal from Audio_Capture.v
     output J_MIC3_Pin4,  // Connect to this signal from Audio_Capture.v
@@ -29,7 +29,7 @@ module Top_Student (
     // Delete this comment and include other inputs and outputs here
     );
     wire [11:0] mic_in;
-    reg [15:0] oled_data = 16'h07E0;
+    wire [15:0] oled_data;
     
     wire clk_20khz;
     wire clk_10hz;
@@ -37,8 +37,6 @@ module Top_Student (
     wire my_frame_begin, my_sendpix, my_sample_pixel;
     wire [12:0] my_pixel_index;
     wire my_chosen_clk;
-    wire [12:0]x;
-    wire [12:0]y;
     
     reg [3:0] count = 3'd0;
 
@@ -61,54 +59,9 @@ module Top_Student (
         );
 
     assign my_chosen_clk = sw[0] ? clk_10hz : clk_20khz;
-    assign x = my_pixel_index % 96;
-    assign y = my_pixel_index / 96;
-
-    always @ (posedge my_chosen_clk) begin
-        led <= mic_in; //sum = 9+4 = 13 (R and B)
-    end
-
-    always @ (posedge CLK100MHZ) begin
-        if (((x == 2 || x == 93) && (y >= 2 && y <= 60)) || ((y == 2 || y == 60) && (x >= 2 && x <= 93 )))
-        begin
-            oled_data <= {5'b11111, 6'd0, 5'd0};
-        end
-        
-        else if (((x >=4 && x<=6 || x>=89 && x<=91) && (y >=4 && y <=58)) || ((y >= 4 && y <=6 || y <= 58 && y >= 56)) && (x >= 4 && x <= 91))
-        begin
-            oled_data <= 16'hFFA500; 
-        end
-        
-        else if (((x == 8 || x == 87) && (y >= 8 && y <= 56)) || ((y == 8 || y == 56) && (x >= 8 && x <= 87 )))
-        begin
-            oled_data <= {5'd0, 6'b111111, 5'd0};
-        end
-        
-        else if (((x == 10 || x == 85) && (y >= 10 && y <= 54)) || ((y == 10 || y == 54) && (x >= 10 && x <= 85 )))
-        begin
-            oled_data <= {5'd0, 6'b111111, 5'd0};
-        end
-
-        else if (((x == 12 || x == 83) && (y >= 12 && y <= 52)) || ((y == 12 || y == 52) && (x >= 12 && x <= 83 )))
-        begin
-            oled_data <= {5'd0, 6'b111111, 5'd0};
-        end
-
-        else if (((x == 14 || x == 81) && (y >= 14 && y <= 50)) || ((y == 14 || y == 50) && (x >= 14 && x <= 81 )))
-        begin
-            oled_data <= {5'd0, 6'b111111, 5'd0};
-        end
     
-        else 
-        begin
-            oled_data <= 16'd0;
-        end
-    end
-
-    always @(posedge CLK100MHZ, posedge bntU)
-    begin
-        if (bntU)
-            count <= 1;
-    end
+    OLED_TA ota(
+    .my_pixel_index(my_pixel_index), .btnU(btnU), .clk(CLK100MHZ), .oled_data(oled_data)
+    );
 
 endmodule

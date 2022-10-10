@@ -18,6 +18,7 @@ proc create_report { reportName command } {
   }
 }
 set_param xicom.use_bs_reader 1
+set_msg_config -id {Common 17-41} -limit 10000000
 create_project -in_memory -part xc7a35tcpg236-1
 
 set_param project.singleFileAddWarning.threshold 0
@@ -31,8 +32,11 @@ set_property ip_output_repo c:/Users/irvin/EE2026/EE2026-Project/SoundDisplay.ca
 set_property ip_cache_permissions {read write} [current_project]
 read_verilog -library xil_defaultlib {
   C:/Users/irvin/EE2026/EE2026-Project/SoundDisplay.srcs/sources_1/new/Audio_Capture.v
+  C:/Users/irvin/EE2026/EE2026-Project/SoundDisplay.srcs/sources_1/new/DFF.v
+  C:/Users/irvin/EE2026/EE2026-Project/SoundDisplay.srcs/sources_1/new/OLED_TA.v
   C:/Users/irvin/EE2026/EE2026-Project/SoundDisplay.srcs/sources_1/new/Oled_Display.v
   C:/Users/irvin/EE2026/EE2026-Project/SoundDisplay.srcs/sources_1/new/clk_divider.v
+  C:/Users/irvin/EE2026/EE2026-Project/SoundDisplay.srcs/sources_1/new/debouncer.v
   C:/Users/irvin/EE2026/EE2026-Project/SoundDisplay.srcs/sources_1/new/Top_Student.v
 }
 # Mark all dcp files as not used in implementation to prevent them from being
