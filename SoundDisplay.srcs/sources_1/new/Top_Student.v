@@ -37,7 +37,7 @@ module Top_Student (
     wire my_frame_begin, my_sendpix, my_sample_pixel;
     wire [12:0] my_pixel_index;
     wire my_chosen_clk;
-    
+    wire [13:0]led_output;
     reg [3:0] count = 3'd0;
 
     clk_divider clk_20k(.CLK(CLK100MHZ),.m(2499),.CLK_OUT(clk_20khz));
@@ -63,5 +63,7 @@ module Top_Student (
     OLED_TA ota(
     .my_pixel_index(my_pixel_index), .btnU(btnU), .clk(CLK100MHZ), .oled_data(oled_data)
     );
+
+    peak_val my_peak_val(.clk(CLK100MHZ), .mic_in(mic_in), .led(led_output));
 
 endmodule
