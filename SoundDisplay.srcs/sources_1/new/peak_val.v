@@ -21,7 +21,7 @@
 
 
 module peak_val(
-    input clk, input [11:0] mic_in, output reg [7:0] led = 8'd0, output reg [6:0] seg, output [3:0] an
+    input clk, input [11:0] mic_in, output reg [7:0] led = 8'd0, output reg [6:0] seg, output [3:0] an, output reg[3:0] vol
     );
 
     wire clk_20khz;
@@ -40,33 +40,39 @@ module peak_val(
         if (count == 2000)
         begin
             if (peak_value >= 2048 && peak_value < 2376) begin
-                led <= 8'b00000000;
-                seg <= 7'b1000000;
+                    led <= 8'b00000000;
+                    seg <= 7'b1000000;
+                    vol <= 0;
                 end
                 else if (peak_value >= 2376 && peak_value < 2704) 
                 begin
                     led <= 8'b00000001;
                     seg <= 7'b1111001;
+                    vol <= 1;
                 end
                 else if (peak_value >= 2704 && peak_value < 3032)
                 begin
                     led <= 8'b00000011;
                     seg <= 7'b0100100;
+                    vol <= 2;
                 end
                 else if (peak_value >= 3032 && peak_value < 3360)
                 begin
                     led <= 8'b00000111;
                     seg <= 7'b0110000;
+                    vol <= 3;
                 end
                 else if (peak_value >= 3360 && peak_value < 3688)
                 begin
                     led <= 8'b00001111;
                     seg <= 7'b0011001;
+                    vol <= 4;
                 end
                 else
                 begin
                     led <= 8'b00011111;
                     seg <= 7'b0010010;
+                    vol <= 5;
                 end
 
             count <= 32'd0;

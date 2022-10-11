@@ -41,9 +41,11 @@ module Top_Student (
     wire my_chosen_clk;
     wire [13:0]led_output;
     reg [3:0] count = 3'd0;
-
-    wire [15:0] oled_data1;
-    wire [15:0] oled_data2;
+    wire [3:0] vol;
+    reg [3:0] currVolume = 3'd0;
+    wire [15:0] oled_data1; //For OTA
+    wire [15:0] oled_data2; //For OTB
+    wire [15:0] oled_data3; //For OT-Mix
 
     clk_divider clk_20k(.CLK(CLK100MHZ),.m(2499),.CLK_OUT(clk_20khz));
     clk_divider clk_10(.CLK(CLK100MHZ),.m(4999999),.CLK_OUT(clk_10hz));
@@ -62,21 +64,32 @@ module Top_Student (
         .sclk(J_MIC3_Pin4),           
         .sample(mic_in)
         );
-    
+    OLED_TA ota(
+           .my_pixel_index(my_pixel_index), .btnU(btnU), .clk(CLK100MHZ), .oled_data(oled_data1)
+           );
+
     OLED_TB tb(
                 .my_pixel_index(my_pixel_index), 
                 .pbd(btnD),
                 .clk(CLK100MHZ),
-                .oled_data(oled_data1)
+                .oled_data(oled_data2)
             );
+    peak_val my_peak_val(.clk(CLK100MHZ), .mic_in(mic_in), .led(led_output), .seg(seg), .an(an), .vol(vol));
     
-    OLED_TA ota(
-    .my_pixel_index(my_pixel_index), .btnU(btnU), .clk(CLK100MHZ), .oled_data(oled_data2)
-    );
-
-    peak_val my_peak_val(.clk(CLK100MHZ), .mic_in(mic_in), .led(led_output), .seg(seg), .an(an));
-
+    always @ (posedge CLK100MHZ) begin
+        currVolume <= vol;
+    end
+    
+    OLED_MIX omix(
+                    .my_pixel_index(my_pixel_index), 
+                    .vol(currVolume),
+                    .clk(CLK100MHZ),
+                    .oled_data(oled_data3)
+                );
+    
+    
     assign led[7:0] = led_output;
-    assign oled_data = (sw[15]) ? oled_data2 : oled_data1;
+    // sw[14] on will enable Single OTA/OTB Oled Mode else follow AVI3
+    assign oled_data = sw[14] ? ((sw[15]) ? oled_data2 : oled_data1): oled_data3;
 
 endmodule
