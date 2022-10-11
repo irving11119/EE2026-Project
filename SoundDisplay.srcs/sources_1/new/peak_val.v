@@ -21,7 +21,7 @@
 
 
 module peak_val(
-    input clk, input [11:0] mic_in, output reg [7:0] led = 8'd0
+    input clk, input [11:0] mic_in, output reg [7:0] led = 8'd0, output reg [6:0] seg, output [3:0] an
     );
 
     wire clk_20khz;
@@ -29,7 +29,7 @@ module peak_val(
     reg [31:0] count = 32'd0;
     
     clk_divider clk_20k(.CLK(clk),.m(2499),.CLK_OUT(clk_20khz));
-
+    assign an = 4'b1110;
     always @(posedge clk_20khz) begin
         count <= count + 1;
         if (mic_in > peak_value)
@@ -39,26 +39,35 @@ module peak_val(
 
         if (count == 2000)
         begin
-            if (peak_value >= 2048 && peak_value < 2458) 
-            begin
+            if (peak_value >= 2048 && peak_value < 2376) begin
                 led <= 8'b00000000;
-            end
-            else if (peak_value >= 2458 && peak_value < 2868)
-            begin
-                led <= 8'b00000001;
-            end
-            else if (peak_value >= 2868 && peak_value < 3278)
-            begin
-                led <= 8'b00000011;
-            end
-            else if (peak_value >= 3278 && peak_value < 3688)
-            begin
-                led <= 8'b00000111;
-            end
-            else
-            begin
-                led <= 8'b00001111;
-            end
+                seg <= 7'b1000000;
+                end
+                else if (peak_value >= 2376 && peak_value < 2704) 
+                begin
+                    led <= 8'b00000001;
+                    seg <= 7'b1111001;
+                end
+                else if (peak_value >= 2704 && peak_value < 3032)
+                begin
+                    led <= 8'b00000011;
+                    seg <= 7'b0100100;
+                end
+                else if (peak_value >= 3032 && peak_value < 3360)
+                begin
+                    led <= 8'b00000111;
+                    seg <= 7'b0110000;
+                end
+                else if (peak_value >= 3360 && peak_value < 3688)
+                begin
+                    led <= 8'b00001111;
+                    seg <= 7'b0011001;
+                end
+                else
+                begin
+                    led <= 8'b00011111;
+                    seg <= 7'b0010010;
+                end
 
             count <= 32'd0;
             peak_value <= 12'd0;

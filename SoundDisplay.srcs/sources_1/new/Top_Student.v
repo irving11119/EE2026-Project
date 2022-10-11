@@ -26,7 +26,8 @@ module Top_Student (
     output J_MIC3_Pin1,   // Connect to this signal from Audio_Capture.v
     output J_MIC3_Pin4,  // Connect to this signal from Audio_Capture.v
     output [13:0] led,
-    output rgb_cs, rgb_stdin, rgb_sclk, rgb_d_cn, rgb_resn, rgb_vccen, rgb_pmoden
+    output rgb_cs, rgb_stdin, rgb_sclk, rgb_d_cn, rgb_resn, rgb_vccen, rgb_pmoden,
+    output [6:0] seg, output [3:0] an
     // Delete this comment and include other inputs and outputs here
     );
     wire [11:0] mic_in;
@@ -73,7 +74,7 @@ module Top_Student (
     .my_pixel_index(my_pixel_index), .btnU(btnU), .clk(CLK100MHZ), .oled_data(oled_data2)
     );
 
-    peak_val my_peak_val(.clk(CLK100MHZ), .mic_in(mic_in), .led(led_output));
+    peak_val my_peak_val(.clk(CLK100MHZ), .mic_in(mic_in), .led(led_output), .seg(seg), .an(an));
 
     assign led[7:0] = led_output;
     assign oled_data = (sw[15]) ? oled_data2 : oled_data1;
