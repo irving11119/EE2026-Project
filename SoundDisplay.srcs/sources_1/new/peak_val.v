@@ -21,7 +21,7 @@
 
 
 module peak_val(
-    input clk, input [11:0] mic_in, output reg [7:0] led
+    input clk, input [11:0] mic_in, output reg [7:0] led = 8'd0
     );
 
     wire clk_20khz;
@@ -55,11 +55,15 @@ module peak_val(
             begin
                 led <= 8'b00001111;
             end
-            else
+            else if (peak_value > 4000)
             begin
                 led <= 8'b00011111;
             end
-            
+            else
+            begin
+                led <= 8'd0;
+            end
+
             count <= 32'd0;
             peak_val <= 12'd0;
         end
