@@ -41,6 +41,9 @@ module Top_Student (
     wire [13:0]led_output;
     reg [3:0] count = 3'd0;
 
+    wire [15:0] oled_data1;
+    wire [15:0] oled_data2;
+
     clk_divider clk_20k(.CLK(CLK100MHZ),.m(2499),.CLK_OUT(clk_20khz));
     clk_divider clk_10(.CLK(CLK100MHZ),.m(4999999),.CLK_OUT(clk_10hz));
     clk_divider clk_6p25(.CLK(CLK100MHZ),.m(7),.CLK_OUT(clk6p25m));
@@ -58,16 +61,21 @@ module Top_Student (
         .sclk(J_MIC3_Pin4),           
         .sample(mic_in)
         );
+    
     OLED_TB tb(
                 .my_pixel_index(my_pixel_index), 
                 .pbd(btnD),
                 .clk(CLK100MHZ),
-                .oled_data(oled_data)
+                .oled_data(oled_data1)
             );
+    
     OLED_TA ota(
-    .my_pixel_index(my_pixel_index), .btnU(btnU), .clk(CLK100MHZ), .oled_data(oled_data)
+    .my_pixel_index(my_pixel_index), .btnU(btnU), .clk(CLK100MHZ), .oled_data(oled_data2)
     );
 
     peak_val my_peak_val(.clk(CLK100MHZ), .mic_in(mic_in), .led(led_output));
+
+    assign led[7:0] = led_output;
+    assign oled_data = (sw[15]) ? oled_data2 : oled_data1;
 
 endmodule

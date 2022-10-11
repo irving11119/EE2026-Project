@@ -32,40 +32,36 @@ module peak_val(
 
     always @(posedge clk_20khz) begin
         count <= count + 1;
-        if (mic_in > peak_val)
+        if (mic_in > peak_value)
         begin
-            peak_val <= mic_in;
+            peak_value <= mic_in;
         end
 
         if (count == 2000)
         begin
-            if (peak_value >= 2048 && peak_value < 2500) 
+            if (peak_value >= 2048 && peak_value < 2458) 
+            begin
+                led <= 8'b00000000;
+            end
+            else if (peak_value >= 2458 && peak_value < 2868)
             begin
                 led <= 8'b00000001;
             end
-            else if (peak_value >= 2500 && peak_value < 3000)
+            else if (peak_value >= 2868 && peak_value < 3278)
             begin
                 led <= 8'b00000011;
             end
-            else if (peak_value >= 3000 && peak_value < 3500)
+            else if (peak_value >= 3278 && peak_value < 3688)
             begin
                 led <= 8'b00000111;
             end
-            else if (peak_value >= 3500 && peak_value < 4000)
+            else
             begin
                 led <= 8'b00001111;
             end
-            else if (peak_value > 4000)
-            begin
-                led <= 8'b00011111;
-            end
-            else
-            begin
-                led <= 8'd0;
-            end
 
             count <= 32'd0;
-            peak_val <= 12'd0;
+            peak_value <= 12'd0;
         end
     end
 endmodule

@@ -3,7 +3,7 @@
 <!--                                                         -->
 <!-- Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.   -->
 
-<Project Version="7" Minor="38" Path="C:/Users/firwe/Desktop/Y2S1/EE2026/SoundDisplay/SoundDisplay.xpr">
+<Project Version="7" Minor="38" Path="C:/Users/irvin/EE2026/EE2026-Project/SoundDisplay.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
     <Option Name="Id" Val="0917254c695c4cb5998f17b74e73445e"/>
