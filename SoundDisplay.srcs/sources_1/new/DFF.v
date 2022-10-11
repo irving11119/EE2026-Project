@@ -27,4 +27,8 @@ module DFF(
         Q <= D;
         Qbar <= ~D;
     end
+<<<<<<< HEAD
 endmodule
+=======
+endmodule
+>>>>>>> latest

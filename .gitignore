@@ -1,0 +1,9 @@
+.Xil/
+SoundDisplay.cache/
+SoundDisplay.hw/
+SoundDisplay.ip_user_files/
+SoundDisplay.ipdefs/
+SoundDisplay.runs/
+SoundDisplay.sim/
+vivado_*.*
+SoundDisplay.xpr

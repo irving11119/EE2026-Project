@@ -21,6 +21,7 @@ module Top_Student (
     input btnD,
     input [15:0] sw,
     input btnC,
+    input btnU,
     input  J_MIC3_Pin3,   // Connect from this signal to Audio_Capture.v
     output J_MIC3_Pin1,   // Connect to this signal from Audio_Capture.v
     output J_MIC3_Pin4,  // Connect to this signal from Audio_Capture.v
@@ -30,17 +31,19 @@ module Top_Student (
     );
     wire [11:0] mic_in;
     wire [15:0] oled_data;
-
+    
     wire clk_20khz;
     wire clk_10hz;
     wire clk6p25m;
     wire my_frame_begin, my_sendpix, my_sample_pixel;
     wire [12:0] my_pixel_index;
-    reg my_chosen_clk;
-    
-    clk_divider clk_20k(.CLK(CLK100MHZ),.m(2500),.CLK_OUT(clk_20khz));
-    clk_divider clk_10(.CLK(CLK100MHZ),.m(5000000),.CLK_OUT(clk_10hz));
-    clk_divider clk_6p25(.CLK(CLK100MHZ),.m(8),.CLK_OUT(clk6p25m));
+    wire my_chosen_clk;
+    wire [13:0]led_output;
+    reg [3:0] count = 3'd0;
+
+    clk_divider clk_20k(.CLK(CLK100MHZ),.m(2499),.CLK_OUT(clk_20khz));
+    clk_divider clk_10(.CLK(CLK100MHZ),.m(4999999),.CLK_OUT(clk_10hz));
+    clk_divider clk_6p25(.CLK(CLK100MHZ),.m(7),.CLK_OUT(clk6p25m));
     
     Oled_Display od(.clk(clk6p25m),.reset(0),
     .frame_begin(my_frame_begin), .sending_pixels(my_sendpix),
@@ -59,6 +62,7 @@ module Top_Student (
         my_chosen_clk <= sw[0] ? clk_10hz : clk_20khz;
     end
     
+<<<<<<< HEAD
 //    always @ (posedge my_chosen_clk) begin
 //        led <= mic_in;
 //    end
@@ -78,5 +82,12 @@ module Top_Student (
     end
 >>>>>>> 383dcf4d62ab91d0b9696eda66d4ab5c8656926e
     // Delete this comment and write your codes and instantiations here
+=======
+    OLED_TA ota(
+    .my_pixel_index(my_pixel_index), .btnU(btnU), .clk(CLK100MHZ), .oled_data(oled_data)
+    );
+
+    peak_val my_peak_val(.clk(CLK100MHZ), .mic_in(mic_in), .led(led_output));
+>>>>>>> latest
 
 endmodule
