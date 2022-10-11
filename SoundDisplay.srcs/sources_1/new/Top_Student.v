@@ -58,36 +58,16 @@ module Top_Student (
         .sclk(J_MIC3_Pin4),           
         .sample(mic_in)
         );
-    always @ (posedge CLK100MHZ) begin
-        my_chosen_clk <= sw[0] ? clk_10hz : clk_20khz;
-    end
-    
-<<<<<<< HEAD
-//    always @ (posedge my_chosen_clk) begin
-//        led <= mic_in;
-//    end
-    
->>>>>>> OTB
-=======
-    always @ (posedge CLK100MHZ) begin
-        my_chosen_clk <= sw[0] ? clk_10hz : clk_20khz;
-    end
-    */
-    always @ (posedge my_chosen_clk) begin
-        led <= mic_in; //sum = 9+4 = 13 (R and B)
-    end
-
-    always @ (posedge CLK100MHZ) begin
-        oled_data <= {mic_in[11:7], 6'd0, mic_in[11:7]};
-    end
->>>>>>> 383dcf4d62ab91d0b9696eda66d4ab5c8656926e
-    // Delete this comment and write your codes and instantiations here
-=======
+    OLED_TB tb(
+                .my_pixel_index(my_pixel_index), 
+                .pbd(btnD),
+                .clk(CLK100MHZ),
+                .oled_data(oled_data)
+            );
     OLED_TA ota(
     .my_pixel_index(my_pixel_index), .btnU(btnU), .clk(CLK100MHZ), .oled_data(oled_data)
     );
 
     peak_val my_peak_val(.clk(CLK100MHZ), .mic_in(mic_in), .led(led_output));
->>>>>>> latest
 
 endmodule
