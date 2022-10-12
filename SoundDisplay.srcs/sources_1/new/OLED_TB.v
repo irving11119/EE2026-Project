@@ -21,7 +21,7 @@
 
 
 module OLED_TB(
-        input [12:0] my_pixel_index, input pbd, input clk, output reg [15:0] oled_data
+        input [12:0] my_pixel_index, input pbd, input clk, output reg [15:0] oled_data, output led
     );
     wire [15:0] black = 16'd0;
     wire [15:0] red = 16'b1111100000000000;
@@ -35,6 +35,7 @@ module OLED_TB(
     assign y = my_pixel_index/96;
     reg [2:0] counter = 0;
     reg [1:0] btnState = 0;
+    reg [31:0] timer = 32'd0;
     wire sig;
     
     debouncer debouncer_inst(
@@ -58,17 +59,26 @@ module OLED_TB(
        end else begin
            oled_data <= black;
        end
+
+        if (timer != 0)
+        begin
+            timer <= (timer == 500000000) ? 32'd0 : timer + 1;
+        end
+
        if (sig) begin
-            if (btnState) begin
+            if (btnState && timer == 0) begin
                 btnState <= 0; //Reset button state to 0
                 if (counter == 3) begin
                     counter <= 0; // Reset counter
                 end else begin
                     counter <= counter + 1;
                 end
+                timer <= timer + 1;
             end
        end else begin
             btnState <= 1;
        end
    end
+
+   assign led = (timer == 0) ? 0 : 1;
 endmodule

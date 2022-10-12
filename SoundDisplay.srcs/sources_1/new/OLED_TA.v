@@ -21,14 +21,22 @@
 
 
 module OLED_TA(
-    input [12:0] my_pixel_index, input btnU, input clk, output reg [15:0] oled_data
+    input [12:0] my_pixel_index, input btnU, input clk, output reg [15:0] oled_data, output led
     );
         wire [12:0] x;
         wire [12:0] y;
+        wire clk_20khz;
+        wire sig;
         assign x = my_pixel_index % 96;
         assign y = my_pixel_index / 96;
         reg [2:0] counter = 3'd0;
         reg [1:0] btnState = 2'd0;
+        reg [31:0] timer = 32'd0;
+
+        clk_divider clk_20k(
+        .CLK(CLK100MHZ),
+        .m(2499),
+        .CLK_OUT(clk_20khz));
 
         debouncer debouncer_inst(
         .pb(btnU),
@@ -37,7 +45,6 @@ module OLED_TA(
         );
 
         always @ (posedge clk) begin
-    //    if (((x == 2 || x == 93) && (y >= 2 && y <= 60)) || ((y == 2 || y == 60) && (x > 2 && x < 93 )))
         if (((x == 2 || x == 93) && (y >= 2 && y <= 60)) || ((y == 2 || y == 60) && (x >= 2 && x <= 93 )))
         begin
             oled_data <= {5'b11111, 6'd0, 5'd0}; //red
@@ -66,6 +73,7 @@ module OLED_TA(
         else if ((((x == 14 || x == 81) && (y >= 14 && y <= 48)) || ((y == 14 || y == 48) && (x >= 14 && x <= 81 ))) && counter > 3'd3)
         begin
             oled_data <= {5'd0, 6'b111111, 5'd0}; //green
+            
         end
 
         else 
@@ -73,17 +81,26 @@ module OLED_TA(
             oled_data <= 16'd0; //black
         end
 
+        if (timer != 0)
+        begin
+            timer <= (timer == 300000000) ? 32'd0 : timer + 1;
+        end
+
         if (sig)
         begin
-            if (btnState) begin
+            if (btnState && timer == 0) begin
                 btnState <= 0; //Reset button state to 0
                 counter <= (counter == 3'd4) ? 3'd0 : counter + 1;
+                timer <= timer + 1;
             end
         end 
-        else 
+        else
         begin
-        btnState <= 1;            
+            btnState <= 1;            
         end
     end
+
+    assign led = (timer == 0) ? 0 : 1;
+
 
 endmodule

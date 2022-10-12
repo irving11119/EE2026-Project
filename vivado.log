@@ -2,10 +2,10 @@
 # Vivado v2018.2 (64-bit)
 # SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
 # IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
-# Start of session at: Tue Oct 11 21:57:11 2022
-# Process ID: 9688
+# Start of session at: Thu Oct 13 01:08:46 2022
+# Process ID: 11452
 # Current directory: C:/Users/irvin/EE2026/EE2026-Project
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent16264 C:\Users\irvin\EE2026\EE2026-Project\SoundDisplay.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent11220 C:\Users\irvin\EE2026\EE2026-Project\SoundDisplay.xpr
 # Log file: C:/Users/irvin/EE2026/EE2026-Project/vivado.log
 # Journal file: C:/Users/irvin/EE2026/EE2026-Project\vivado.jou
 #-----------------------------------------------------------
@@ -14,10 +14,8 @@ open_project C:/Users/irvin/EE2026/EE2026-Project/SoundDisplay.xpr
 INFO: [Project 1-313] Project file moved from 'C:/Users/firwe/Desktop/Y2S1/EE2026/SoundDisplay' since last save.
 Scanning sources...
 Finished scanning sources
-WARNING: [Project 1-509] GeneratedRun file for 'synth_1' not found
-WARNING: [Project 1-509] GeneratedRun file for 'impl_1' not found
 WARNING: [filemgmt 56-2] IPUserFilesDir: Could not find the directory 'C:/Users/irvin/EE2026/EE2026-Project/SoundDisplay.ip_user_files', nor could it be found using path 'C:/Users/firwe/Desktop/Y2S1/EE2026/SoundDisplay/SoundDisplay.ip_user_files'.
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.2/data/ip'.
-open_project: Time (s): cpu = 00:00:09 ; elapsed = 00:00:05 . Memory (MB): peak = 793.207 ; gain = 53.031
+open_project: Time (s): cpu = 00:00:13 ; elapsed = 00:00:08 . Memory (MB): peak = 803.629 ; gain = 80.098

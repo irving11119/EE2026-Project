@@ -25,7 +25,7 @@ module Top_Student (
     input  J_MIC3_Pin3,   // Connect from this signal to Audio_Capture.v
     output J_MIC3_Pin1,   // Connect to this signal from Audio_Capture.v
     output J_MIC3_Pin4,  // Connect to this signal from Audio_Capture.v
-    output [13:0] led,
+    output [15:0] led,
     output rgb_cs, rgb_stdin, rgb_sclk, rgb_d_cn, rgb_resn, rgb_vccen, rgb_pmoden,
     output [6:0] seg, output [3:0] an
     // Delete this comment and include other inputs and outputs here
@@ -65,14 +65,15 @@ module Top_Student (
         .sample(mic_in)
         );
     OLED_TA ota(
-           .my_pixel_index(my_pixel_index), .btnU(btnU), .clk(CLK100MHZ), .oled_data(oled_data1)
+           .my_pixel_index(my_pixel_index), .btnU(btnU), .clk(CLK100MHZ), .oled_data(oled_data1), .led(led[14])
            );
 
     OLED_TB tb(
                 .my_pixel_index(my_pixel_index), 
                 .pbd(btnD),
                 .clk(CLK100MHZ),
-                .oled_data(oled_data2)
+                .oled_data(oled_data2),
+                .led(led[12])
             );
     peak_val my_peak_val(.clk(CLK100MHZ), .mic_in(mic_in), .led(led_output), .seg(seg), .an(an), .vol(vol));
     
