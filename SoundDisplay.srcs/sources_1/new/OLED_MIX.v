@@ -38,84 +38,28 @@ module OLED_MIX(
     assign y = my_pixel_index/96;
     
     always @ (posedge clk) begin
-        if (vol == 0) begin
-            oled_data <= black;
-        end
-        if (vol >= 1) begin
-            //OTA Red
-            if (((x == 2 || x == 93) && (y >= 2 && y <= 60)) || ((y == 2 || y == 60) && (x >= 2 && x <= 93 )))
-            begin
-                oled_data <= {5'b11111, 6'd0, 5'd0}; //red
-            end else begin
-                           oled_data <= black;
-                       end
-            // OTB Red
-            if ((x >= 43) && (x <= 53) && (y >= 55) && (y < 60)) begin
-                oled_data <= red;
-            end else begin
-                           oled_data <= black;
-                       end
-        end
-        if (vol >= 2) begin
-            //OTA Orange
-                    if (((x >=4 && x<=6 || x>=89 && x<=91) && (y >=4 && y <=58)) || ((y >= 4 && y <=6 || y <= 58 && y >= 56)) && (x >= 4 && x <= 91))
-                            begin
-                                oled_data <= 16'hFFA500; //orange
-                            end else begin
-                                           oled_data <= black;
-                                       end
-                    //OTB Orange
-                    if ((x >= 43) && (x <= 53) && (y >= 47) && (y < 52)) begin
-                               oled_data <= orange;
-                           end else begin
-                                          oled_data <= black;
-                                      end
-        end 
-        if (vol >= 3) begin
-            //OTA Green
-            if ((((x == 8 || x == 87) && (y >= 8 && y <= 54)) || ((y == 8 || y == 54) && (x >= 8 && x <= 87 ))))
-                    begin
-                        oled_data <= {5'd0, 6'b111111, 5'd0}; //green
-                    end else begin
-                                   oled_data <= black;
-                               end
-            //OTB Green
-            if ((x >= 43) && (x <= 53) && (y >= 39) && (y < 44)) begin
-                       oled_data <= green;
-                   end else begin
-                                  oled_data <= black;
-                              end
-        end
-        if (vol >= 4) begin
-            //OTA GREEN2
-                if ((((x == 10 || x == 85) && (y >= 10 && y <= 52)) || ((y == 10 || y == 52) && (x >= 10 && x <= 85 ))))
-                    begin
-                        oled_data <= {5'd0, 6'b111111, 5'd0}; //green
-                    end else begin
-                                   oled_data <= black;
-                               end
-            //OTB GREEN2
-                if ((x >= 43) && (x <= 53) && (y >= 31) && (y < 36)) begin
-                       oled_data <= greenl;
-                   end else begin
-                                  oled_data <= black;
-                              end
-            
-        end
-        if (vol == 5) begin
-        //OTA GREEN3
-            if ((((x == 12 || x == 83) && (y >= 12 && y <= 50)) || ((y == 12 || y == 50) && (x >= 12 && x <= 83 ))))
-                begin
-                    oled_data <= {5'd0, 6'b111111, 5'd0}; //green
-                end else begin
-                               oled_data <= black;
-                           end
-        //OTB GREEN3
-            if ((x >= 43) && (x <= 53) && (y >= 23) && (y < 28)) begin
-                   oled_data <= greenll;
-               end else begin
-                              oled_data <= black;
-                          end
-        end
+       if ((x >= 43) && (x <= 53) && (y >= 55) && (y < 60) && vol >= 1) begin
+           oled_data <= red;
+       end else if ((((x == 2 || x == 93) && (y >= 2 && y <= 60)) || ((y == 2 || y == 60) && (x >= 2 && x <= 93 ))) && vol >= 1) begin
+           oled_data <= {5'b11111, 6'd0, 5'd0}; //red
+       end else if ((x >= 43) && (x <= 53) && (y >= 47) && (y < 52) && vol >= 2) begin
+           oled_data <= orange;
+       end else if ((((x >=4 && x<=6 || x>=89 && x<=91) && (y >=4 && y <=58)) || ((y >= 4 && y <=6 || y <= 58 && y >= 56)) && (x >= 4 && x <= 91)) && vol >= 2) begin
+           oled_data <= 16'hFFA500; //orange  
+       end else if ((x >= 43) && (x <= 53) && (y >= 39) && (y < 44) && vol >= 3) begin
+           oled_data <= green;
+       end else if ((((x == 8 || x == 87) && (y >= 8 && y <= 54)) || ((y == 8 || y == 54) && (x >= 8 && x <= 87 ))) && vol >= 3) begin
+           oled_data <= {5'd0, 6'b111111, 5'd0}; //green
+       end else if ((x >= 43) && (x <= 53) && (y >= 31) && (y < 36) && vol >= 4) begin
+           oled_data <= greenl;
+       end else if ((((x == 10 || x == 85) && (y >= 10 && y <= 52)) || ((y == 10 || y == 52) && (x >= 10 && x <= 85 ))) && vol >= 4) begin
+           oled_data <= {5'd0, 6'b111111, 5'd0}; //green
+       end else if ((x >= 43) && (x <= 53) && (y >= 23) && (y < 28) && vol >= 5) begin
+           oled_data <= greenll;
+       end else if ((((x == 12 || x == 83) && (y >= 12 && y <= 50)) || ((y == 12 || y == 50) && (x >= 12 && x <= 83 ))) && vol >= 5) begin
+           oled_data <= {5'd0, 6'b111111, 5'd0}; //green
+       end else begin
+           oled_data <= black;
+       end
      end
 endmodule
