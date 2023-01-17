@@ -25,12 +25,13 @@ module OLED_MIX(
     );
     // Palette
     wire [15:0] black = 16'd0;
+    wire [15:0] white = ~black;
     wire [15:0] red = 16'b1111100000000000;
     wire [15:0] greenll = 16'b0011111111100111;
     wire [15:0] greenl = 16'b0001111111100011;
     wire [15:0] green = 16'b0000011111100000;
     wire [15:0] orange = 16'b1111111111100000;
-    
+
     // Coords
     wire [6:0] x; //from 0 to 95
     wire [5:0] y; //

@@ -94,8 +94,8 @@ set_property PACKAGE_PIN V5 [get_ports {seg[5]}]
 set_property PACKAGE_PIN U7 [get_ports {seg[6]}]					
 	set_property IOSTANDARD LVCMOS33 [get_ports {seg[6]}]
 
-#set_property PACKAGE_PIN V7 [get_ports dp]							
-	#set_property IOSTANDARD LVCMOS33 [get_ports dp]
+set_property PACKAGE_PIN V7 [get_ports dp]							
+	set_property IOSTANDARD LVCMOS33 [get_ports dp]
 
 set_property PACKAGE_PIN U2 [get_ports {an[0]}]					
 	set_property IOSTANDARD LVCMOS33 [get_ports {an[0]}]
@@ -271,12 +271,12 @@ set_property PACKAGE_PIN R18 [get_ports {rgb_pmoden}]
 
 
 ##USB HID (PS/2)
-#set_property PACKAGE_PIN C17 [get_ports PS2Clk]						
-	#set_property IOSTANDARD LVCMOS33 [get_ports PS2Clk]
-	#set_property PULLUP true [get_ports PS2Clk]
-#set_property PACKAGE_PIN B17 [get_ports PS2Data]					
-	#set_property IOSTANDARD LVCMOS33 [get_ports PS2Data]	
-	#set_property PULLUP true [get_ports PS2Data]
+set_property PACKAGE_PIN C17 [get_ports PS2_CLK]
+    set_property IOSTANDARD LVCMOS33 [get_ports PS2_CLK]
+set_property PULLUP true [get_ports PS2_CLK]
+    set_property PACKAGE_PIN B17 [get_ports PS2_DATA]
+set_property IOSTANDARD LVCMOS33 [get_ports PS2_DATA]
+    set_property PULLUP true [get_ports PS2_DATA]
 
 
 ##Quad SPI Flash

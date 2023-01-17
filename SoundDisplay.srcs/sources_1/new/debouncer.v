@@ -27,7 +27,7 @@ module debouncer(
     // Create a 4hz clock
     clk_divider clk_divider_inst(
         .CLK(clk),
-        .m(12_500_000),
+        .m(3125000),
         .CLK_OUT(clk_4hz)
     );
     wire Q1, Q2, Qbar1, Qbar2;

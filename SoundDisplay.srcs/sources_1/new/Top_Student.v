@@ -22,16 +22,37 @@ module Top_Student (
     input [15:0] sw,
     input btnC,
     input btnU,
+    inout PS2_CLK,
+    inout PS2_DATA,
     input  J_MIC3_Pin3,   // Connect from this signal to Audio_Capture.v
     output J_MIC3_Pin1,   // Connect to this signal from Audio_Capture.v
     output J_MIC3_Pin4,  // Connect to this signal from Audio_Capture.v
     output [15:0] led,
     output rgb_cs, rgb_stdin, rgb_sclk, rgb_d_cn, rgb_resn, rgb_vccen, rgb_pmoden,
-    output [6:0] seg, output [3:0] an
+    output [6:0] seg, output [3:0] an, output dp
     // Delete this comment and include other inputs and outputs here
     );
+    
+    // Interfaces
+    wire [9:0] MOUSE_X_POS, MOUSE_Y_POS;
+    wire L_CLICK, M_CLICK, R_CLICK, MOUSE_NEW_EVENT;
     wire [11:0] mic_in;
     wire [15:0] oled_data;
+//        assign led[2] =  L_CLICK;
+//    assign led[1] =  M_CLICK;
+//    assign led[0] =  R_CLICK;
+    
+    mouse_bridge mdriver(
+         .PS2_CLK(PS2_CLK),
+         .PS2_DATA(PS2_DATA),
+         .CLK(CLK100MHZ),
+         .MOUSE_X_POS(MOUSE_X_POS),
+         .MOUSE_Y_POS(MOUSE_Y_POS),
+         .LEFT_CLICK(L_CLICK),
+         .RIGHT_CLICK(R_CLICK),
+         .MIDDLE_CLICK(M_CLICK),
+         .MOUSE_NEW_EVENT(MOUSE_NEW_EVENT)
+     );
     
     wire clk_20khz;
     wire clk_10hz;
@@ -39,16 +60,11 @@ module Top_Student (
     wire my_frame_begin, my_sendpix, my_sample_pixel;
     wire [12:0] my_pixel_index;
     wire my_chosen_clk;
-    wire [13:0]led_output;
-    reg [3:0] count = 3'd0;
-    wire [3:0] vol;
-    reg [3:0] currVolume = 3'd0;
-    wire [15:0] oled_data1; //For OTA
-    wire [15:0] oled_data2; //For OTB
-    wire [15:0] oled_data3; //For OT-Mix
+//    wire [13:0]led_output;
+    //wire [3:0] vol;
+    //reg [3:0] currVolume = 3'd0;
 
     clk_divider clk_20k(.CLK(CLK100MHZ),.m(2499),.CLK_OUT(clk_20khz));
-    clk_divider clk_10(.CLK(CLK100MHZ),.m(4999999),.CLK_OUT(clk_10hz));
     clk_divider clk_6p25(.CLK(CLK100MHZ),.m(7),.CLK_OUT(clk6p25m));
     
     Oled_Display od(.clk(clk6p25m),.reset(0),
@@ -63,34 +79,26 @@ module Top_Student (
         .clk_samp(J_MIC3_Pin1),           
         .sclk(J_MIC3_Pin4),           
         .sample(mic_in)
-        );
-    OLED_TA ota(
-           .my_pixel_index(my_pixel_index), .btnU(btnU), .clk(CLK100MHZ), .oled_data(oled_data1), .led(led[14])
-           );
-
-    OLED_TB tb(
-                .my_pixel_index(my_pixel_index), 
-                .pbd(btnD),
-                .clk(CLK100MHZ),
-                .oled_data(oled_data2),
-                .led(led[12])
-            );
-    peak_val my_peak_val(.clk(CLK100MHZ), .mic_in(mic_in), .led(led_output), .seg(seg), .an(an), .vol(vol));
-    
-    always @ (posedge CLK100MHZ) begin
-        currVolume <= vol;
-    end
-    
-    OLED_MIX omix(
-                    .my_pixel_index(my_pixel_index), 
-                    .vol(currVolume),
-                    .clk(CLK100MHZ),
-                    .oled_data(oled_data3)
-                );
+     );
     
     
-    assign led[7:0] = led_output;
-    // sw[14] on will enable Single OTA/OTB Oled Mode else follow AVI3
-    assign oled_data = sw[14] ? ((sw[15]) ? oled_data2 : oled_data1): oled_data3;
-
+    top_menu tm(
+         .CLOCK(CLK100MHZ), 
+         .sw(sw),
+         .mic_in(mic_in), 
+         .btnC(btnC),
+         .btnU(btnU),
+         .btnD(btnD),
+         .mouse_x(MOUSE_X_POS), 
+         .mouse_y(MOUSE_Y_POS),
+         .left_click(L_CLICK),
+         .right_click(R_CLICK),
+         .my_pixel_index(my_pixel_index),
+         .oled_data(oled_data), 
+         .led(led), 
+         .seg(seg), 
+         .an(an),
+         .dp(dp)
+     );
+    
 endmodule

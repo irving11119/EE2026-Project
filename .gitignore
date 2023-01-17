@@ -6,3 +6,6 @@ SoundDisplay.ipdefs/
 SoundDisplay.runs/
 SoundDisplay.sim/
 vivado_*.*
+*.jou
+*.log
+*.xpr

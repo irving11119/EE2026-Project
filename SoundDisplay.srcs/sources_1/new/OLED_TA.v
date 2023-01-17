@@ -25,7 +25,7 @@ module OLED_TA(
     );
         wire [12:0] x;
         wire [12:0] y;
-        wire clk_20khz;
+//        wire clk_20khz;
         wire sig;
         assign x = my_pixel_index % 96;
         assign y = my_pixel_index / 96;
@@ -33,10 +33,10 @@ module OLED_TA(
         reg [1:0] btnState = 2'd0;
         reg [31:0] timer = 32'd0;
 
-        clk_divider clk_20k(
-        .CLK(CLK100MHZ),
-        .m(2499),
-        .CLK_OUT(clk_20khz));
+//        clk_divider clk_20k(
+//        .CLK(CLK100MHZ),
+//        .m(2499),
+//        .CLK_OUT(clk_20khz));
 
         debouncer debouncer_inst(
         .pb(btnU),
